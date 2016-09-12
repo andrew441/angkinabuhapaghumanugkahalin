@@ -1,0 +1,1407 @@
+
+
+/**header**/
+.pads-right{
+    padding-right: 0px;
+}
+.font-column-head{  /*1*/
+    font-size: 24px !important;
+}
+.font-column-Subhead{
+    font-size: medium !important;
+}
+.font-column-size{
+    font-size: medium !important;
+}
+.euro-size{
+    padding: 11px 12px!important;
+    top: 10px;
+    position: relative;
+}
+.column-font {
+    font-size: 14px !important;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    font-width: bolder;
+    color:#000;
+}
+.sub-header-title{
+
+    font-family: 'AvenirNextLTW01-UltraLight' !important;
+    padding: 5px 0px 5px 0px;
+    padding: 1px !important;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    text-align: left;
+    color: black;
+    list-style-type: none;
+    font-weight: bolder;
+    border: none !important;
+    display: -webkit-inline-box;
+    border-right: 1px solid white !important;
+    letter-spacing: 1px !important;
+}
+
+.categories{
+    display:block !important;
+}
+.dataPanel-categories{
+    display:block !important;
+}
+
+.col-cetered1{
+    float: none;
+    left: -6%;
+
+}
+.col-centered{
+    padding: 0px;
+    display: inline-block;
+    /*float: none;*/
+    text-align: left;
+    background-color:white;
+    padding: 0px 5px;
+   /* margin-bottom: 20px;
+    margin-top: 20px;
+    border:1px solid blue;*/
+}
+.col-centered > img{
+    cursor:pointer;
+}
+
+.caption-top{
+    font-weight: lighter !important;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    background-color: black;
+    margin: 0px;
+    padding: 7px 0px;
+    text-align: center;
+    position: relative;
+    top:-32px;
+
+
+}
+.hover-opacity {
+    text-align: center;
+    float: none;
+    margin: auto !important;
+}
+#hover-top{
+    cursor: pointer !important;
+}
+
+/*18 categories hover*/
+/* womans clothing cathegory*/
+#hover-top p > .top-lefthover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 55px;
+    cursor: pointer !important;
+}
+#hover-top p > .bottoms-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 54px;
+    cursor: pointer !important;
+}
+#hover-top p > .dresses-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 49px;
+    cursor: pointer !important;
+}
+#hover-top p > .jean-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 50px;
+    cursor: pointer !important;
+}
+#hover-top p > .suiting-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 42px;
+    cursor: pointer !important;
+}
+#hover-top p > .outerwear-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 25px;
+    cursor: pointer !important;
+}
+/* womans clothing cathegory*/
+#hover-top p > .shoes-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 48px;
+    cursor: pointer !important;
+}
+#hover-top p > .bags-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 53px;
+    cursor: pointer !important;
+}
+#hover-top p > .accessories-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 21px;
+    cursor: pointer !important;
+}
+/* home cathegory*/
+#hover-top p > .bedding-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 40px;
+    cursor: pointer !important;
+}
+#hover-top p > .deccor-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 47px;
+    cursor: pointer !important;
+}
+#hover-top p > .dinning-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 40px;
+    cursor: pointer !important;
+}
+#hover-top p > .furniture-hover{
+    z-index: 100;
+    position: absolute;
+    color:white;
+    top: 45px;
+    left: 30px;
+    cursor: pointer !important;
+}
+/*end of 18 categories*/
+
+.col-centered > p > span{
+    color: #ffffff;
+    font-size: 14px;
+    font-family: "Lucida Grande", Verdana, Arial, "Bitstream Vera Sans", sans-serif;
+}
+.first-columns-row{
+    height: 115px;
+}
+.first-columns-row >h2{
+    margin-top: 35px !important;
+}
+.ftd{
+    padding-bottom: 20px;
+    padding-top: 40px;
+}
+.ftd > ul{
+    margin-bottom: 0px;
+}
+.ftd ul > li{
+    color:black !important;
+    display: inline;
+
+}
+.ftd ul li button{
+    font-weight: bolder;
+   /* margin-left: 20px;
+    float:left;*/
+    border-radius: 0px;
+    /*padding: 5px 30px !important;*/
+    font-size: 14px;
+    font-family: 'AvenirNextLTW01-UltraLight' !important;
+    font-size: 14px;
+    margin-right: -4px;
+
+
+}
+
+.wm-cl-b{
+    padding: 10px 39px;
+}
+.hm-b{
+
+    padding: 10px 88px;
+
+}
+.wm-active{
+    background-color: black !important;
+    color:white !important;
+}
+
+
+/*navigation review css*/
+.close{
+    font-size: 28px;
+    opacity: 10;
+}
+.close-btn-review{
+
+    position: relative;
+    top: 15px;
+    right: 20px;
+}
+.review-pop-up-text > h1{
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    font-weight: bolder;
+    color:#000;
+}
+.colmn-padds h1, p{
+    line-height: 27px;
+}
+.colmn-padds{
+     padding: 0px !important;
+ }
+.colmn-margs{
+    margin: 0px !important;
+}
+.pstion-top{
+    position: relative;
+    top: 10px;
+}
+
+.visit{
+    background-color:black;
+    color:white;
+    border-radius: 0px;
+    padding: 5px 30px !important;
+    display: inherit;
+    padding: 10px 50px !important;
+}
+.review-image-popup{
+    position: relative;
+    top: 25px;
+    margin-left: 25px;
+}
+.rev-navigation{
+    background-color: white;
+    padding-top: 20px;
+    border-bottom: 1px outset black;
+}
+.rev-navigation .menu-bars{
+     margin-bottom: 0px;
+ }
+.rev-navigation .menu-bars li{
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    text-align: left;
+    color: white;
+    list-style-type: none;
+    font-weight: bolder;
+    border: none !important;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-box;
+}
+.rev-navigation .menu-bars li a{
+    margin-right: 20px;
+    color: #000 !important;
+    text-decoration: none;
+    font-size: 20px;
+}
+/*this is cover photo css*/
+.cover-p-name h1, h4{
+    font-weight: bolder;
+    font-weight: 900px;
+    font-family: 'AvenirNextLTW01-UltraLight' !important;
+}
+.cover-pht-div{
+    position: relative;
+    top: -130px;
+    color:white;
+}
+
+
+
+/*this is for the modal css*/
+.modal-col-width{
+    width: 45% !important;
+    margin: 30px auto;
+}
+.modal-header{
+    padding-bottom: 0px;
+    border-bottom: 1px solid #fff !important;
+    font-family: 'AvenirNextLTW01-UltraLight' !important;
+}
+.modal-header p span > a{
+    text-decoration: none;
+    color:red;
+}
+.modal-header h2{
+    font-family: 'AvenirNextLTW01-UltraLight' !important;
+}
+.modal-content{
+    border-radius: 0px !important;
+    border:2px solid black !important;
+}
+.form-group > label{
+    margin-top: 6%;
+    float: none;
+    display: inherit;
+    text-align: left;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    color: black;
+    font-weight: bolder;
+}
+.form-group > .form-sub{
+    background-color: black;
+    color: white;
+    border-radius: 0px !important;
+    float: right;
+    text-align: center;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    /* color: black; */
+    list-style-type: none;
+    font-weight: bolder;
+}
+.form-group > .gender-col{
+    border: 1px solid #ccc;
+    padding: 9px 0px;
+    margin-top: 5px;
+}
+.form-group > .gender-col > label > input{
+    margin-left: -30px !important;
+}
+.form-group > .gender-col > label{
+    font-weight: bolder;
+    margin-right: 39px !important;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    color: black;
+}
+.modal-signup-for-h4-and-p{
+    text-align: center !important;
+}
+.modal-signup-for-h4-and-p > h4{
+     font-size: 40px !important;
+    font-family: 'Didot' !important;
+    letter-spacing: 1px;
+    font-family: 'Didot' !important;
+    color: black;
+    list-style-type: none;
+    font-size: 40px;
+    font-weight: lighter;
+    border: none !important;
+    display: -webkit-inline-box;
+    display: -moz-inline-box;
+    display: -ms-inline-box;
+}
+.modal-signup-for-h4-and-p > p{
+    text-align: center;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    color: black;
+    list-style-type: none;
+    font-weight: bolder;
+}
+.modal-signup-p{
+    padding-top: 0px;
+    padding: 15px 4%;
+}
+.modal-signup-p > p {
+    margin-top: 30px !important;
+    margin-bottom: 20px;
+    text-align: center;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    color: black;
+    font-weight: bolder;
+
+}
+.modal-footer{
+    border-top: 1px solid #fff !important;
+
+}
+.footer .footer-popup-btn{ /**2**/
+    border-radius: 0px;
+    padding: 15px 15px !important;
+    background-color: black;
+    color:white;
+    font-family: 'AvenirNextLTW01-UltraLight' !important;
+    font-weight: bolder;
+    font-size: 14px;
+    border-radius: 0px;
+}
+.review-padds{
+    padding-top:45px;
+}
+.modal-footer p span > a{
+    text-decoration: none;
+    color:red;
+}
+.modal-footer p{
+    margin-top: 205px !important;
+    text-align: center;
+    padding: 10px !important;
+}
+.modal-footer .modal-fr > p{
+    margin-top: 0px !important;
+    text-align: center;
+    padding: 10px !important;
+ }
+.modal-footer .modal-fr > p{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+.modal-rev-size{
+    width:1020px !important;
+}
+/*end of modal css*/
+/*this is for list an item css*/
+.bottoms-hover{
+    left: 37px !important;
+    position: absolute;
+}
+
+.checkbox-wear-tear{
+    margin:  0px !important;
+}
+.width-item-type{
+    padding-right: 5px !important;
+    width: 12%;
+}
+.color-red{
+    color:red;
+}
+.line-dushed{
+    margin-bottom:5px;
+    border:2px dashed #ccc;
+    height: 50px;
+    margin-top: 10px;
+}.line-dushed p{
+    padding-top:20px;
+ }
+.line-box > button{
+    border-radius:0px !important;
+    float: left;
+    margin-bottom: 20px;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    font-weight: bolder;
+}
+.line-box{
+    float:none;
+    margin: auto;
+}
+.clg-box{
+    padding-left: 10%;
+    padding-right: 10%;
+}
+/*product info css*/
+.wki-stl{
+    padding-right: 0px;
+}
+.wki-rtv{
+  padding: 0px;
+}
+
+.btn-cancel{
+    float:right;
+    border-radius: 0px;
+    padding: 10px 60px !important;
+}
+.cs-btn1{
+    padding-right: 5px;
+    margin-bottom:20px
+}
+.cs-btn2{
+    padding-left: 5px;
+    margin-bottom:20px
+}
+.btn-cancel{
+    float:right;
+    border-radius: 0px;
+    padding: 10px 60px !important;
+}
+.btn-submit{
+    float:left;
+    border-radius: 0px;
+    padding: 10px 60px !important;
+}
+.cs-cancel-submit-active{
+    background-color:black !important;
+    color:white !important;
+}
+/*
+*css for footer
+*
+*/
+.under-footer > h1 {
+    margin-bottom: 20px !important;
+    font-weight: lighter;
+    text-align: left;
+    font-size: 24px;
+    padding-top: 10px;
+    margin-top: 0px !important;
+    font-family: 'Didot' !important;
+    margin-right: 20px;
+}
+.footer-side-nav ul li{
+    line-height: 40px;
+    font-weight: 100 !important;
+
+}
+
+.sub-footer{
+    background-color:#000;
+}
+.sub-footer > div >div{
+    padding-left:0px;
+
+}
+.sub-footer > div >div>div{
+    padding-left:0px;
+}
+.form-jon > h2{
+    margin-top:50px;
+    text-align: left;
+    font-size: 20px;
+    color:white;
+    display:inline-block;
+    text-align: left;
+    padding-top: 10px;
+    margin-top: 0px !important;
+    font-family: 'AvenirNextLTW01-UltraLight' !important;
+    margin-right: 20px;
+}
+.form-jon > input{
+    margin-top:50px;
+    text-align: right;
+    text-align: center;
+    width: 60%;
+    /*height: 10% !important;*/
+    margin-top: 0px !important;
+}
+.sub-footer > div > div > div > h1{
+    text-align:left;
+    color:white;
+}
+.sub-footer > div > div > div > p{
+    text-align:left;
+    color:white;
+}
+.sub-footer > div > .div-cp{
+    padding-left:0px;
+}
+.sub-footer > div > .div-cp > h4{
+    text-align:left;
+    color:white;
+    line-height: 31px;
+}
+.sub-footer > div > div > div > form> div > label{
+    text-align:left;
+    color:white;
+}
+.sub-footer > div > div > div > div > label, ul > li{
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    text-align:left;
+    color:white;
+    list-style-type: none;
+    font-weight: bolder;
+}
+.sub-footer > .container .footer-border{
+    border:1px solid white;
+    margin-bottom: 20px;
+}
+.fullwith-search-icon{
+    width: 62% !important;
+}
+.tds h4, .tds p{
+    text-align: left;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    font-weight: bolder;
+ }
+
+.tds >p{
+    line-height: 20px !important;
+    font-size: 14px;
+}
+
+.tds-col{
+    height:452px ;
+
+}
+.btn-color{
+    border:1px solid #afa5a5;
+    color:#afa5a5;
+    background-color: white;
+    border-radius: 0px;
+    padding: 10px 26px !important;
+}
+.btn-color:hover{
+    background-color: black !important;
+    color:white !important;
+
+}
+/*1rst button (YER & NO)*/
+.btnClick1 {
+    background-color: black !important;
+    color:white !important;
+}
+/*2nd button (YER & NO)*/
+.btnClick2 {
+    background-color: black !important;
+    color:white !important;
+}
+/*Third button (YER & NO)*/
+.btnClick3 {
+    background-color: black !important;
+    color:white !important;
+}
+/*Fourth button (YER & NO)*/
+.btnClick4 {
+     background-color: black !important;
+     color:white !important;
+ }
+/*Fifth button (YER & NO)*/
+.btnClick5 {
+    background-color: black !important;
+    color:white !important;
+}
+/*Six button (YER & NO)*/
+.btnClick6{
+    background-color: black !important;
+    color:white !important;
+}
+.btn-color1{
+    font-size: 14px !important;
+}
+
+/*
+*end of css sub footer
+*/
+@media (min-width: 1440px){
+
+    .photos-width{
+        width: 20.66%;
+    }
+}
+@media (max-width: 1440px){
+    .modal-dialog{
+        position: relative;
+        height: 100%;
+        top: 50;
+
+    }
+}
+@media (max-width: 1200px){
+
+    /*list an item*/
+    .width-item-type{
+        width: 11.7% !important;
+    }
+    .width-list-an-item{
+        width: 15% ;
+    }
+    .modal-dialog{
+        position: relative;
+        height: 100%;
+        top: 0 !important;
+
+    }
+    .trd-cat-mrglft{
+        margin-left: -40px !important;
+    }
+    /*for sub footer*/
+
+    .fullwith-search-icon{
+        width: 54% !important ;
+    }
+
+    .wsh-mglef{
+        margin: 0px !important;
+        padding-right: 0px !important;
+    }
+    .wm-cl-b{
+            padding-left: 10px;
+            padding-right: 10px;
+    }
+    .hm-b{
+        padding: 10px 70px;
+    }
+    .review-image-popup{
+        margin-left: 0px !important;
+        height: 100%;
+    }
+    .modal-col-width{
+        width: 45% !important;
+    }
+    .modal-sub-content{
+        padding: 0px 25px !important;
+    }
+}
+@media (min-width: 1200px){
+
+    .modal-col-width{
+        width: 45% !important;
+    }
+    .modal-sub-content{
+        padding: 0px 25px !important;
+    }
+    .modal-for-width{
+        width: 50%;
+    }
+
+    .col-centered{
+
+        width: 13% !important;
+       /* margin-right: 4px;
+        margin-top: 0;*/
+    }
+    .col-pop-rev-img{
+        width: 18.666667% !important;
+    }
+    .tds{
+        margin-right: -10px !important;
+        /*width:21% !important;*/
+        text-align: left !important;
+        background-color:white;
+    }
+
+    .tds1{
+        height: 150px !important; ;
+    }
+}
+
+@media (max-width: 1199px){
+
+    .width-item-type{
+        width: 17% !important;
+    }
+
+}
+@media (max-width: 1030px)/* and (max-width: 768px)*/{
+
+    .modal-content{
+        width: 98% !important;
+        display: inline-block;
+    }
+    .modal-rev-size{
+        width: 100% !important;
+    }
+}
+@media (min-width: 992px) {
+
+    .wm-cl-b{
+        padding: 10px 39px !important;
+    }
+    .hm-b{
+
+        padding: 10px 88px;
+
+    }
+    .col-pop-rev-img{
+        width: 18.666667% !important;
+    }
+    .tds1{
+        height: 270px ;
+    }
+    .col-pop-rev img{
+        width: 80% !important;
+    }
+
+    .condition-qs{
+        padding:0px;
+    }
+ }
+@media (max-width: 992px){
+
+    .fullwith-search-icon{
+        width: 100% !important;
+    }
+    .euro-size{
+        top: 0px !important;
+        position: relative !important;
+    }
+    .wm-cl-b{
+        padding: 10px 39px !important;
+    }
+    .hm-b{
+
+        padding: 10px 88px;
+
+    }
+        .col-pop-rev .col-pop-rev-img .texts1-rev > button{
+            width: 100% !important;
+            font-size: 86% !important;
+            margin-left: auto !important;
+            position: relative;
+            /* left: -6px !important; */
+            margin-right: auto !important;
+        }
+     .col-pop-rev .col-pop-rev-img{
+        padding: 0px;
+    }
+    .tds1{
+        height: 270px ;
+    }
+    .ftd ul li button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tds-col{
+        height: 707px ;
+    }
+    .age-of-item{
+        float: none;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+}
+@media (max-width: 992px){
+
+    .column-cosign-terms-pad, .column-cosign-terms-pad > div,  .column-cosign-terms-pad > div > h4{
+        padding:0px !important;
+        text-align: left !important;
+    }
+    .col-pop-rev .col-pop-rev-img{
+        padding: 0px;
+    }
+    .tds1{
+        height: 270px ;
+    }
+    .ftd ul li button{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .tds-col{
+        height: 84% !important;
+    }
+    .age-of-item{
+        float: none;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+}
+
+@media (max-width: 991px){
+    .wsh-width{
+        width: 66.66666667% ;
+    }
+
+}
+
+@media (min-width: 858px){
+    .column-right-pads{
+        padding-right: 10px !important;
+    }
+
+    .col-pop-rev .col-pop-rev-img .texts1-rev > button{
+
+        width:86% !important;
+        font-size: 86% !important;
+    }
+
+}
+@media (min-width: 768px) and (max-width: 767px){
+
+    .modal-dialog {
+        width:801px;
+        margin: 30px auto;
+    }
+    .tds1{
+        height: 270px;
+    }
+    /*this is cover photo css*/
+    .sub-menuBar{
+        margin-top: -100px !important;
+    }
+
+
+}
+@media (max-width: 767px){
+    .margin-topbot{
+        margin: 10px 0px !important;
+    }
+    .tds-col {
+        height: auto !important;
+    }
+    .column-for-padding{
+        padding: 0px !important;
+    }
+}
+@media (max-width: 768px){
+    .size-FullWith{
+        width: 100% !important;
+    }
+    .modal-col-width{/*login to your account pop up*/
+        width: 79% !important;;
+    }
+    .review-image-popup{
+        height: 75%;
+    }
+    /**header.php**/
+    .pads-right{
+        padding: 0px;
+    }
+    .afterPurchase h1{
+        font-size: 85% !important;
+    }
+
+    .sub-menuBar{
+        margin-top: -100px !important;
+    }
+
+    .navigation{
+    }
+    .rev-navigation .menu-bars li a{
+    }
+    .tds1{
+        height: 100px ;
+    }
+
+    .wki-stl{
+        padding: 0px 0px 5px 5px !important;
+    }
+}
+@media (max-width: 768px) {
+    .wsh-width{
+        width: 100% !important;
+        padding: 0px;
+    }
+    .wsh-width > ul > li{
+    }
+
+    .width-item-type{
+        width: 100% !important;
+    }
+
+    .width-list-an-item{
+        width: 100% !important;
+    }
+    .trd-cat-mrglft{
+        margin-left: 0px !important;
+    }
+}
+@media (max-width: 656px){
+    .col-pop-rev .col-pop-rev-img{
+        padding: 0px;
+        margin-right: 0px !important;
+        display: inline;
+        width: 100% !important;
+    }
+    .col-pop-rev .col-pop-rev-img .texts1-rev > button{
+        margin-bottom: 0px !important;
+        margin-top: 5% !important;
+    }
+    .col-pop-rev .col-pop-rev-img{
+        margin-bottom: 5%;
+    }
+    .texts1-rev{
+        padding:0px;
+        margin-bottom: 5%;
+    }
+}
+@media (max-width: 513px){
+
+    .under-footer{
+
+        width: 100% !important;
+        float:none;
+    }
+    .footer-side-nav{
+        width: 25% !important;
+    }
+    .first-columns-row{
+        float:none;
+        width: 100%;
+        height: auto;
+    }
+    .ftd{
+        width: 100%;
+    }
+
+}
+@media (max-width: 503px){
+    .modal-col-width{
+
+        width: 100% !important;
+
+    }
+}
+@media (max-width: 449px){
+    /**header.php**/
+    .afterPurchase h1{
+        font-size: 55% !important;
+    }
+    .under-footer{
+
+        width: 100% !important;
+        float:none;
+    }
+    .footer-side-nav{
+        width: 50% !important;
+        text-align: justify;
+    }
+
+
+}
+@media (max-width: 377px){
+    .sub-menuBar{
+        margin-top: -80px !important;
+    }
+    .cover-p-name h1, h4{
+        font-size:18px !important;
+    }
+    .cs-cancel-submit{
+        /*width: 100%;*/
+        padding: 0px;
+    }
+    .cs-cancel-submit > #cs-bttn1, #cs-bttn2{
+        float: none !important;
+    }
+}
+/*this is for iphone6*/
+@media (max-width: 375px) {
+    .hm-b{
+
+        padding: 10px 89px !important;
+
+    }
+    .menu-bars > .link-menu-bars {
+        position: relative;
+        top: 25px;
+        padding-top: 0px !important;
+    }
+
+    .menu-bars > li {
+        display: block !important;
+    }
+
+    .menu-bars li > a {
+        display: inline-table;
+        font-size: 14px !important;
+    }
+
+    .menu-bars {
+        margin-top: 10px !important;
+        margin-bottom: 40px !important;
+        text-align: left !important;
+    }
+
+    .cover-photo-dev > img {
+        display: none;
+    }
+
+    .cover-pht-div-img {
+        position: relative;
+        top: 140px;
+        text-align: left;
+    }
+
+    .review-image-popup {
+        height: auto !important;
+    }
+
+    .cover-p-name {
+        color: #000 !important;
+        position: static !important;
+        padding: 0px;
+    }
+
+    .titleLabelPopup {
+        margin-left: 0px !important;
+    }
+
+    .cover-p-name h1, .cover-p-name > h4 {
+        font-size: 14px !important;
+        margin-left: 50%;
+    }
+
+    .colmn-padds1 {/*many class*/
+        padding: 0px !important;
+    }
+
+    .condition-qs {
+        margin: 0px !important;
+    }
+
+    .photos-text-listItem {
+        width: 100% !important;
+    }
+
+    .column-padds-iphon6 {
+        margin-top: 10px;
+        padding-left: 15px !important;
+        padding-right: 15px !important;
+    }
+    .column-padds-leftright {/*sign up */
+        padding: 0px 0px !important;
+    }
+    .div-hmd {
+        margin-top: 30px !important;
+        margin-bottom: 30px !important;
+    }
+
+    .cs-cancel-submit {
+        margin: 0px !important;
+    }
+
+    .btd-fullWidth {
+        width: 100% !important;
+    }
+    .fullWidth {
+        width: 100% !important;
+    }
+    /*signin to consign*/
+    .modal-signup-for-h4-and-p h4, p {
+        margin-left: 0px !important;
+    }
+
+    .column-font {
+        font-size: 14px !important;
+    }
+
+    .column-float {
+        float: none !important;
+    }
+
+
+    .column-marginb {
+        margin-bottom: 25px !important;
+    }
+    .column-marginbot {
+        margin-bottom: 0px !important;
+    }
+
+    .column-margin {
+        margin-top: 25px !important;
+    }
+    .column-margint {
+        margin-top: 0px !important;
+    }
+
+    .column-margintn {
+        margin-top: -15px !important;
+    }
+    .column-margnbotops {
+        margin: 10px 0px !important;
+    }
+    .column-margnbots {
+        margin: 0px 0px -11px 0px !important;
+    }
+    .clg-box {
+        display: none;
+    }
+
+    .ernBreakDown-Column {
+        width: 100%;
+        margin: 0px !important;
+    }
+
+    .column-textLeft {
+        text-align: left !important;
+    }
+    .column-textCenter {
+        text-align: center !important;
+    }
+
+    .btn-paddingLr{
+        padding: 10px 30px !important;
+
+    }
+    .line-weight-column{
+        line-height: 20px;
+        margin-top: 25px !important;
+    }
+    .top-lefthover{
+        position: absolute !important;
+        left: 40px !important;
+        top: 25px !important;
+    }
+
+    /*update account item*/
+    .modal_nav {
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .acsbrands{
+        width: 98% !important;
+        margin: 0px !important;
+    }
+    .modal_nav ul li{
+        margin: 0px !important;
+    }
+    .font-column-head{
+        font-size: 24px !important;
+    }
+    .font-column-select-style{
+        font-size: 24px !important;
+    }
+    .font-column-Subhead{
+        font-size: 16px !important;
+    }
+    .font-column-subheader{
+        font-size: 12px !important;
+    }
+    .head-pad-top{
+        padding-top: 0px !important;
+    }
+    .font-column-mar{
+        margin: 0px !important;
+    }
+    .afterPurchase h1{
+        font-size: 35% !important;
+    }
+    .cover-photoH{
+        height: auto !important;
+    }
+    /*sub-footer*/
+    .fullwith-search-icon{
+        width: 100%;
+    }
+    .textarea-column{
+        resize: none;
+        overflow: hidden;
+        min-height: 50px;
+        max-height: 100px;
+    }
+    .copy-right-column > h4{
+        line-height: 20px !important;
+        margin: 0px !important;
+        font-size: 14px !important;
+    }
+
+}
+
+/*css for account admin and member*/
+.btn-default:hover {
+    color: white !important;
+    background-color: #000000 !important;
+}
+.btn-default {
+    color: white !important;
+    background-color: #000000 !important;
+}
+.btn-default > a:hover{
+    text-decoration: none;
+}
+.btn-default > a{
+    color: white !important;
+}
+.col-pop-rev {
+    margin: 40px 0px;
+}
+.col-pop-rev > div{
+
+    margin: auto;
+
+}
+.col-pop-rev .col-pop-rev-img{
+    background-color: white;
+    position: relative;
+    left: -4px;
+    color:white;
+    border:1px solid black;
+    margin-right:10px;
+    display: inline-block;
+    display: -moz-inline-grid;
+    display: -o-inline-grid;
+    display: -oz-inline-grid;
+    display: -webkit-inline-grid;
+    display: -webkit-inline-box;
+    display: -o-inline-box;
+    display: -oz-inline-box;
+    float: none;
+}
+.active-tab{
+    display:block !important;
+}
+.active-underline{
+    -moz-text-decoration-color: red !important; /* Code for Firefox */
+    text-decoration-color: red !important;
+    text-decoration: underline !important;
+}
+.col-pop-rev img{
+    width: 100%;
+}
+.col-pop-rev .texts1-rev{
+    padding-bottom: 0px;
+}
+
+.col-pop-rev .col-pop-rev-img .texts1-rev > button{
+
+    border-radius: 0px;
+    padding: 10px 15px !important;
+    border:0px 1px 1px 1px;
+    border-style: solid;
+    border-color: black;
+    background-color: #000000;
+    color:white !important;
+    font-size: 100%;
+    margin: 20px 0px;
+    font-family: 'AvenirNextLTW01-UltraLight' !important;
+
+}
+
+/*for update account*/
+.modal_nav ul li{
+    margin: 1px !important;
+}
+.float-text > label{
+    float: left !important;
+}
+label.div-right-hand{
+    float: left;
+}
+.new-cosigner-pads{
+    padding-top: 15px;
+}
+.new-cosigner-pads > p{
+        font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    letter-spacing: 1px;
+    font-weight: bold;
+}
+.sign-ing-cls div > label{
+    margin-top: 0px !important;
+    margin-right: 20px;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    color: black;
+    list-style-type: none;
+    font-weight: bolder;
+    color: #000 !important;
+    text-decoration: none;
+    font-size: 14px;
+    letter-spacing: 2px;
+}
+.sign-ing-cls div > .form-control{
+    height: auto  !important;
+    font-size: 14px;
+ }
+.select_style_wear{
+    font-family: 'Didot' !important;
+    letter-spacing: 1px;
+    font-size: 40px;
+}
+.btn-select-update > button{
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+}
+.afterPurchase{
+    font-size: 75px !important;
+}
+.border_b > p{
+    padding-left: 66px;
+    font-size: 19px;
+    margin-left: -60px;
+    width: auto;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    font-weight: bolder;
+    letter-spacing: 1px;
+    margin-bottom: 15px !important;
+}

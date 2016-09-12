@@ -1,0 +1,1 @@
+$('#firs_name').hide();

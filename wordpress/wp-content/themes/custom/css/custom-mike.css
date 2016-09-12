@@ -1,0 +1,146 @@
+div.wp-private-resale { 
+    height: 540px; 
+    position: relative;  
+}
+div.texts1, div.texts2, div.texts3{ 
+    min-height: 85%;   
+
+ }
+ .footer
+{ 
+    position: relative;
+    clear: both;  
+    padding-bottom: 20px;
+}
+
+div.texts1{
+    background-color: #F3F3F3 !important; 
+    padding: 32px 27px;
+    display:block;   
+}
+div.texts2{
+    padding: 32px;
+    display:block;   
+    background:#ff6600 !important; 
+}
+div.texts3{
+    padding:32px;  
+    display:block;  
+    background-color: #E8E8E8 !important;    
+}
+
+div.texts1 > h5{
+    font-size: 20px;
+    color: #000000;
+}
+div.texts2 > h5{
+    font-size: 20px;
+    color:#fff;
+    line-height: 34px;
+}
+div.texts3 > h5{
+    font-size: 20px;   
+    color: #000000;  
+    line-height: 34px;     
+}
+div.texts1 > p{
+    font-family: "AvenirNextLTW01-UltraLight";
+    font-size: 18px;
+    color: #574B4B;
+    line-height: 20px;
+}
+div.texts2 > p{
+    font-family: "AvenirNextLTW01-UltraLight";
+    font-size: 18px;
+    color: #FDD3B1;
+    line-height: 20px;
+}
+div.texts3 > p{
+    font-family: "AvenirNextLTW01-UltraLight";
+    font-size: 18px;
+    color: #574B4B;
+    line-height: 20px;
+}
+
+.footer > a{
+    
+}
+.footer > a.footer1{
+    background-color:#19B0C5; 
+    color:#fff; 
+    line-height: 60px;
+    border:1px 
+    solid #fff;     
+    padding: 15px 60px;
+    font-size: 18px;
+    position: relative;
+    top: 0px;
+    text-decoration: none; 
+}
+.footer > a.footer2{
+    background-color: #FAC66A ;
+    color: #fff;
+    line-height: 60px;
+    border: 1px solid #fff;
+    padding: 15px 60px;
+    font-size: 18px;
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+    text-decoration: none; 
+}
+.footer > a.footer3{
+    background-color:#DF2204; 
+    color:#fff; 
+    border:1px solid #fff;
+    line-height: 60px;     
+    padding: 15px 60px;
+    font-size: 18px;
+    position: relative;
+    top: 0px;
+    margin: 0px auto;
+    text-decoration: none;   
+}
+@media screen and ( min-width:992px) and ( max-width: 1199px){	
+	div.texts1{
+	    padding: 32px 15px !important;
+	}
+	div.texts2{
+ 	
+ 	}
+	div.texts3{
+    	padding: 32px 7px !important;
+	}
+}
+@media screen and ( min-width:768px) and ( max-width:991px){ 
+
+    .col1{
+        background-color: #F3F3F3 !important;
+    }
+    .col2{
+        background:#ff6600 !important;
+    }
+    .col3{
+        background-color: #E8E8E8 !important;
+    }
+    div.texts1{
+        padding: 2px 0px !important;
+    }
+    div.texts2{
+        padding: 2px 0px !important;
+    }
+    div.texts3{
+        padding: 2px 0px !important;
+    }
+    .cost{
+        padding:20px !important;
+    }
+    div.wp-private-resale {
+        height: 540px;
+        padding: 11px !important;
+        position: relative;
+    }
+    .footer > a {
+        padding: 15px 33px !important;
+    }
+}

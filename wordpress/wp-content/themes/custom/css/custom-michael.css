@@ -1,0 +1,1845 @@
+footer > div.footer-div1 .menu-bars{
+ 	background-color:black; 
+ 	padding: 15px !important;
+ }	
+ .menu-bars li > a{ 
+ 	color:#fff !important;
+     margin-right: 20px;
+     text-decoration: none;
+     font-size: 20px;
+ }
+.afterPurchase h2{ 
+	font-family: 'AvenirNextLTW01-UltraLight' !important;
+	padding:5px 0px 5px 0px;
+}
+
+.navigation li {
+    padding:1px !important;
+}
+
+.consignerBuyer {
+	padding-top: 2px;
+    margin-bottom: 20px;
+}
+.text-lp{
+	font-family: 'Didot Regular, Avenir Next Ultra Light';
+}
+.tiered-commission{ 
+	line-height: 25px !important;
+}
+
+.btn2Consigner{
+	background-color: #DF2204 !important;
+	border: 1px solid #fff !important;
+}
+.btn2Buyer{
+	background-color: #FAC66A !important;
+	border: 1px solid #fff !important;
+}
+.final-sign-cosigner{
+	width: 170px !important;
+	background: #DF2204 !important;
+    padding: 8.5px 0px !important;
+    color:#fff !important;
+}
+.final-sign-shopper{
+	width: 170px !important;
+	background: #FAC66A !important;
+    padding: 8.5px 0px !important;
+}
+footer .cfooter{
+	font-size: 14px !important;
+	text-align: left; 
+ }
+footer .cfooter1{
+	font-size: 14px !important; 
+}
+.abt-us{ 
+	 max-width:170px; 
+	 max-width:150px; 
+	 height: 45px; 
+	 padding:0px !important; 
+	 position:relative;top:1px; 
+	 background-color:white;
+	 padding: 0px 0px 28px 0px !important;
+} 
+.first_section p{
+	font-family: "AvenirNextLTW01-UltraLight";
+	font-size: 20px;
+	font-weight:600;
+}
+
+.brd-right{
+	border-right:none !important;
+}
+.w-c-s-column{ 
+}
+.pw-c-s-column{
+	text-align: center !important;
+	color: #000;
+	margin-bottom: 40px !important;
+}
+.pw-c-s-column1{
+	text-align: center !important;
+	color: #000;
+ }
+.consign-sale-a{
+	margin-top: -10px !important;
+}
+.wp-private-resale{ 
+} 
+div.text2{
+	padding: 40px;
+	display:block;
+	background-color:red; 
+	max-width: 350px;
+	margin: 0px auto;
+	min-height:540px;
+}
+div.text1{
+	background-color: #F3F3F3 !important; 
+	padding: 40px 30px;
+	display:block; 
+	max-width: 350px; 
+	margin: 0px auto;
+	min-height:540px;
+}
+div.text3{ 
+	padding:40px 35px; 
+	color: #fff;
+	display:block;
+	background-color:red; 
+	background-color: #E8E8E8 !important;	
+	margin: 0px auto;
+	min-height:540px;
+
+}
+div.text3 p{
+	color:#574B4B;
+	line-height: 20px !important; 
+	font-size: 18px;
+	margin: 0px auto;
+	font-family: "AvenirNextLTW01-UltraLight";
+} 
+div.text2 p{ 
+	color:#FDD3B1;
+	line-height: 20px;
+	font-size: 18px; 
+	font-family: "AvenirNextLTW01-UltraLight";
+}
+div.text1 p{
+    margin: 0px auto;
+	color:#574B4B;
+	line-height: 20px;
+	font-size: 18px;
+	font-family: "AvenirNextLTW01-UltraLight";
+	display: block;
+	text-align: center; 
+	font-size: 24px;
+	margin: 0px auto;
+	margin-bottom: -20px;
+}
+div.text1 h5{
+	color: #000000; 
+    font-family: 'Didot Regular & Avenir Next Medium';
+    font-weight: bold;
+    display: block;
+    line-height: 35px;
+    font-size: 20px;
+    margin: 0px auto;
+    margin-bottom:10px;
+}
+div.text2 h5{
+	font-weight: bold;
+	font-family: 'Didot Regular & Avenir Next Medium';
+	 color:#fff;
+	font-size: 20px;
+    line-height: 35px;
+    margin: 0px auto;
+    margin-bottom:10px;
+}
+div.text3 h5{
+	font-size: 20px;    
+	line-height: 43px; 
+	color:#000;
+	font-weight: bold; 
+	margin: 0px auto; 
+}
+div.text1 a {  
+	background-color:#19B0C5; 
+	color:#fff; 
+	border:1px 
+	solid #fff;     
+	padding: 15px 15px 15px 15px;
+    font-size: 18px;
+    position: relative;
+    top: 20px;
+    text-decoration: none;
+	} 
+div.text3 a{
+	background-color:#DF2204; 
+	color:#fff; 
+	border:1px 
+	solid #fff;     
+	padding: 15px 15px 15px 15px;
+    font-size: 18px;
+    position: relative;
+    top: 30px;
+    margin: 0px auto;
+    text-decoration: none;
+}
+div.text2 a{
+	background-color: #FAC66A ;
+    color: #fff;
+    line-height: 60px;
+    border: 1px solid #fff;
+   	padding: 14px 15px 15px 15px;
+    font-size: 18px;
+    position: relative;
+    top: 9px;
+    margin: 0px auto;
+    text-decoration: none;
+}
+ 
+.a-private{
+	padding-top:11px !important;
+}
+.b-private{
+	padding-top:34px !important;
+}
+.c-private{
+	margin-top:-20px !important;
+}
+.d-private{
+	margin-top:-20px !important;
+}
+.e-p-private{
+	margin:0px auto !important;
+	margin-top:15px !important;
+}
+.f-private{
+	margin-top:-20px !important;
+}
+.g-p-private{
+	margin:0px auto !important;
+	margin-top:15px !important;
+}
+.h-private{
+	margin-top:-13px !important;
+	    margin-bottom: 7px !important;
+}
+.i-p-private{
+	margin-top:7px !important;
+}
+.j-private{
+	margin-top:-11px !important;
+}
+.k-p-private{
+	padding:7px !important; 
+	margin:0px auto !important;
+}
+.l-private{
+	margin-top:-20px !important;
+}
+.l-p-private{
+	padding:10px !important; 
+	margin:0px auto !important;
+}
+.m-private{
+	margin-top: 15px !important;
+    font-size: 17px !important;
+    font-weight: 700 !important;
+    font-family: 'Didot' !important;
+}
+
+
+.container-fluid{
+	margin-top: -50px;
+}
+h4.strt-reducing{
+	line-height: 30px;
+	letter-spacing: 2px;
+	font-family: 'Didot';
+}
+.start-reduce-div{
+	margin-top: 40px !important; 
+}
+.qouteStrtReWrapper{
+	padding-bottom: 45px;
+}
+.c-s-ven{
+    cursor: pointer !important;
+}
+.c-s-ven:hover{
+	text-decoration: underline; 
+    cursor: pointer !important;
+}
+/* 
+.brandNames{
+	height: 237px;
+    overflow: auto;
+} */
+
+.white > a {
+	text-decoration: none;
+}
+.white > a:hover {
+	text-decoration: none;
+	color:#fff;
+	cursor: text;
+}
+.fontSize-18px > a{
+	text-decoration: none;
+}
+.fontSize-18px > a:hover{
+	text-decoration: none;
+	color:#fff; 
+}
+.brandCategories > a{
+	text-decoration: none;
+}
+.brandCategories > a:hover{
+	text-decoration: none;
+	color:#fff;
+}
+.brandNames{
+	height: 237px;
+    overflow-y: scroll !important;
+    overflow-x: hidden;
+} 
+.slide_down li{
+	padding:1px !important;
+    font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;
+    text-align: left;
+    color: white;
+    list-style-type: none;
+    font-weight: bolder;
+    border: none !important;
+    display: -webkit-inline-box;
+    border-right: 1px solid white !important;
+}
+
+footer > div.footer-div1{
+	position: relative !important;
+    top: 12px !important;
+    border-top: 1px solid black !important;
+    padding-top: 0px;
+}
+.copyRight{
+	text-align: left;
+    position: relative;
+    left: -30px;
+    background-color:white;
+    font-size:14px;
+}
+.sercive-lap{
+	background-color: white;
+    font-size: 14px;
+    text-align: right;
+    padding-right: 0px;
+    /* margin-right: 23px; */
+    position: relative;
+    right: -15px;
+
+}
+/*
+*	this is for the brand we accept
+*
+*/
+ 
+@media screen and ( min-width:992px) and ( max-width: 1199px){	
+	/*
+	*
+	*desired items
+	*
+	*
+	*/
+	span.text-content{
+		    max-height: 18% !important;
+	}
+	div.text1{
+		background-color: #F3F3F3 !important; 
+		padding: 40px 30px;
+		display:block; 
+		max-width: 350px; 
+		margin: 0px auto;
+		min-height:540px;
+	} 
+	div.text1 h5 { 
+	    line-height: 100%;
+	    font-size: 20px;
+	    margin-bottom: 11px;
+	}
+	div.text1 p { 
+	    line-height: 30px;    
+	    font-size: 18px !important;
+	    line-height: 26px !important;
+	}
+
+	div.text1 a {  
+		position: relative; 
+	    /* top:44px; */
+	    top: 30px;
+	    font-size: 100%;
+	    /*top: 410px;*/
+	}
+	div.text2{
+		padding: 40px 15px;
+		display:block;
+		background-color:red; 
+		max-width: 350px;
+		margin: 0px auto;
+		min-height:540px;
+	}
+	div.text2 h5 {   
+	    line-height: 100%;
+	    font-size: 20px;
+	}
+	div.text2 p {  
+		line-height: 24px;
+	    font-size: 18px !important;
+	}
+	div.text2 a {    
+		position:relative;
+		top:20px;
+	    font-size: 100%; 
+	    height: 50px;
+	}
+	 
+	div.text3 h5 { 
+   		line-height: 100%; 
+	    font-size: 20px;
+	    margin: 0px auto;
+    	margin-bottom: 12px;
+
+	} 
+	div.text3{ 
+	padding:40px 15px; 
+	color: #fff;
+	display:block;
+	background-color:red; 
+	background-color: #E8E8E8 !important;	
+	margin: 0px auto;
+	min-height:540px;
+
+	}
+	div.text3 p {  
+		line-height: 25px;
+	    font-size: 18px !important;
+	    line-height: 23px !important
+	}
+	div.text3 a {    
+	    font-size: 100%;
+		position: relative;
+    	top: 40px;
+	}  
+ 
+	.a-private{
+		margin-bottom: 14px !important;
+	}
+	.c-private{
+		padding-top: 6px !important;
+		margin-bottom: 17px !important;
+	}
+	.h-private{
+		padding-top: 8px !important;
+	}
+	.dright h3 {
+		font-size: 18px;
+	    font-weight: lighter;
+	    line-height: 30px;
+	}
+	.d-private{
+		padding-top: 7px !important;
+	}
+	.k-p-private{
+		margin-top: -8px !important;
+		line-height: 19px !important;
+	}
+	.f-private{
+		padding-top: 11px !important;
+	}
+	.g-p-private{
+		padding-top: 4px !important;
+	}
+	.l-p-private{
+		margin-top: -4px !important;
+	}
+	.b-private{
+		padding-top: 8px !important;
+	} 
+	.dright h1 {  
+		font-size: 28px;
+	}
+	.img-responsive
+	{
+		min-height:405px !important;
+	}
+	.m-private{
+		padding-top: 9px;
+	}
+	.k-p-private{
+		padding-top: 2px;
+	}
+	a.w-women{ 
+		font-size: 24px;
+		/*padding: 20px 158px !important;*/
+		text-decoration: none;
+		cursor: pointer;
+		color:blue; 
+		position: relative;
+		top:15px;
+		color:#000; 
+	}
+	 
+	
+
+	/*
+	*This section is for the desired items 
+	*
+	*
+	*/
+	.row123{
+	 }
+	.men-desired-col{
+		padding:15px;  
+		margin: 0px auto; 	
+	}
+	
+	div.div-button-Women-Men-desired{
+		margin:40px 0px 40px 0px;
+	}	 
+	.w-lu-dsired1 > li > a{
+		font-family: 'Didot' !important;
+		    padding: 0px !important;
+	}
+ }
+@media screen and ( min-width:768px) and ( max-width:991px){ 
+	/*
+	*
+	*Desired Items
+	*
+	*
+	*/
+	span.text-content{
+		height: 35% !important;
+	}
+	.buttonWomen{
+		float:right;
+	}
+	.buttonMen{
+		float:left;	
+	}
+	.brandselector{
+		float:none !important;
+	}
+	#women-column-desired > div{
+		padding:30px !important;
+	}
+	#women-chic-column-desired > div{
+		padding:30px !important;
+	}
+	#women-preppy-column-desired > div{
+		padding:30px !important;
+	}
+	#women-streetwear-column-desired > div{
+		padding:30px !important;
+	}
+	#mens-column-desired > div{
+		padding:30px !important;
+	}
+	#mens-menswear-column-desired > div{
+		padding:30px !important;
+	}
+	#mens-preppy-column-desired > div{
+		padding:30px !important;
+	}
+	#mens-streetwear-column-desired > div{
+		padding:30px !important;
+	}
+
+
+	#home-column-desired > div{
+		padding:30px !important;
+	}
+	#home-decor-column-desired > div{
+		padding:30px !important;
+	}
+	#home-dinning-column-desired > div{
+		padding:30px !important;
+	}
+	#home-furniture-column-desired > div{
+		padding:30px !important;
+	}
+	a.footer-cosign-des {
+	     font-size: 18px;
+	    position: relative;
+	    top: 26px !important;
+	 }
+	/*end of the desired items*/
+
+	/*
+	*
+	*
+	*
+	*
+	*/
+	.border_b p {
+    font-weight: bold;
+    padding: 0px !important;
+    margin-bottom: 0px !important;
+	}
+	.border_b{ 
+    padding: 0px 0px 0px 8px !important;
+ 
+	}
+	.new-cosigner-pads{
+	 	padding:0px !important;
+	 }
+	 
+	div.text1 {  
+		 width:250px;
+		 padding: 36px 15px 40px 15px !important;
+	}
+	div.text2 {  
+		 width:250px;
+		 padding: 40px 20px 40px 20px !important;
+	}
+	div.text3 {  
+		 width:250px;
+		 padding: 40px 20px 40px 20px !important;
+	}
+	div.text1 h5 { 
+	    line-height: 100%;
+	    font-size: 20px ;
+	    line-height: 23px !important;
+	     margin-bottom: 0px !important;
+	}
+	div.text1 p { 
+	    line-height: 25px;  
+	    font-size: 16px !important;
+	}
+	div.text1 a { 
+	position: relative; 
+	    top:74px !important; 
+	    font-size: 100%; 
+
+	} 
+
+	div.text2 h5 {   
+   		line-height: 100%;
+	    font-size: 20px;
+	}
+	div.text2 p {   
+    	line-height: 25px;
+	    font-size: 16px !important;
+	}
+	div.text2 a {    
+		position:relative;
+		top:44px;
+	    font-size: 100%; 
+	    height: 30px;
+	} 
+	div.text3 h5 {  
+    	line-height: 25px;
+	    font-size: 20px ;
+
+	} 
+	div.text3 p {  
+		line-height: 25px !important;
+	    font-size: 16px !important;
+		/*
+		line-height: 20px;
+		font-size: 100%;
+		*/
+	}
+	div.text3 a {    
+	    font-size: 100%;
+		position: relative;
+    	top: 14px;
+	}  
+	.footer-div1{
+		position:relative !important; 
+		top:0px !important;
+	}
+	.afterPurchaseSubClass{
+		max-height: 100% !important;
+		font-size: 24px !important;
+	}  
+	.dright
+	{
+		padding-top:100px;
+	}
+	.m-private {
+    	margin-top: 20px !important;
+    	font-size: 15px !important;
+     }
+	.b-private {
+		position: relative;
+    	top: 53px;
+   		padding-top: 0px !important;
+	}
+	.a-private {
+    padding-top: 0px !important; 
+	}
+	.q-l-private{
+		padding-top: 9px;
+	}
+	.r-l-private{
+		    padding-top: 5px;
+	}
+	.j-private{
+	    margin-top: -18px !important;
+	}
+	.k-p-private {
+    	padding: 18px !important;
+   		margin: 0px auto !important;
+	}
+	.l-p-private {
+    	padding: 7px !important;
+    	margin: 0px auto !important;
+	}
+	/*
+	*This section is for the desired items 
+	*
+	*
+	*/
+
+	a.w-women{ 
+		font-size: 24px;
+		/*padding: 20px 120px !important;*/
+		text-decoration: none;
+		cursor: pointer;
+		color:blue; 
+		position: relative;
+		top:15px;
+		color:#000;
+		font-family: 'Didot';
+	}
+ 	.main-container{
+ 		position: relative;
+		top:30px;
+		padding-bottom: 35px;
+ 	} 
+	.men-desired-col{
+		padding:15px;  
+		margin: 0px auto; 	
+	}
+	div.div-button-Women-Men-desired{
+		margin:0px 0px 0px 0px !important;
+		padding:0px !important;
+	}
+}
+
+@media screen and ( min-width:426px) and ( max-width: 767px){
+	/*
+	*
+	*Desired Items
+	*
+	*
+	*/
+	.sercive-lap{
+	    position: relative;
+	    left: 0 !important;
+	     width: 100% !important;
+    	text-align: center;
+	  }
+	.copyRight {
+		left: 0 !important;
+    	position: relative; 
+        margin-left: auto;
+	    margin-right: auto;
+	    float: none;
+	    text-align: center;
+	    width: 100%;	
+     } 
+	.w-lu-dsired1 > li{ 
+		display:block !important;
+	}
+	.brandselector{
+		float:none !important;
+	}
+
+	#women-column-desired > div{
+		padding:30px !important;
+	}
+	#women-chic-column-desired > div{
+		padding:30px !important;
+	}
+	#women-preppy-column-desired > div{
+		padding:30px !important;
+	}
+	#women-streetwear-column-desired > div{
+		padding:30px !important;
+	}
+	#mens-column-desired > div{
+		padding:30px !important;
+	}
+	#mens-menswear-column-desired > div{
+		padding:30px !important;
+	}
+	#mens-preppy-column-desired > div{
+		padding:30px !important;
+	}
+	#mens-streetwear-column-desired > div{
+		padding:30px !important;
+	}
+
+
+	#home-column-desired > div{
+		padding:30px !important;
+	}
+	#home-decor-column-desired > div{
+		padding:30px !important;
+	}
+	#home-dinning-column-desired > div{
+		padding:30px !important;
+	}
+	#home-furniture-column-desired > div{
+		padding:30px !important;
+	}
+
+	/*end of the desired items*/
+	.border_b{ 
+    padding: 0px 0px 0px 0px !important;
+        margin-left: 0px !important;
+	}
+
+	.border_b p {
+    font-weight: bold; 
+    margin-bottom: 0px !important;
+    padding: 4px 8px 4px 0px !important;
+	}	
+	.new-cosigner-pads{
+	 	padding:0px !important;
+	 }
+	 div.text1{
+	 	max-width:100% !important;   
+	 }
+	 div.text2{
+	 	max-width:100% !important; 
+	 }
+	 div.text3{
+	 	max-width:100% !important; 
+	 	max-height: 100% !important;
+	 }
+
+	div.text1 p {    
+	 	line-height: 29px !important; 
+	}
+	div.text1 h5 {    
+	 	line-height: 45px !important;
+	}
+	div.text1 a {    
+		position: relative;
+    	/* top:30px; */
+	}
+	
+	div.text3 p {    
+	 	line-height: 30px !important;
+	} 
+	div.text3 h5 {    
+		 line-height: 29px !important;	
+	}
+	.afterPurchaseSubClass{
+		max-height: 100% !important;
+		font-size: 24px !important;
+	}
+	.afterPurchaseSubClass > p{ 
+		font-size: 24px !important;
+	}    
+	#SUSTAINING > h1 {
+    	font-size: 45px;
+    }
+
+
+    a.w-women{ 
+		font-size: 24px;
+		/*padding: 20px 100px !important;*/
+		text-decoration: none;
+		cursor: pointer;
+		color:blue; 
+		position: relative;
+		top:15px;
+		color:#000;
+		font-family: 'Didot';
+		display: block;
+		line-height: normal;
+	}
+	.main-container{
+		position: relative;
+		top:20px;
+	}
+	.row123{
+		margin: 0px auto !important;
+	}
+	.men-desired-col{
+		padding:15px;  
+		margin: 0px auto !important; 	
+	}
+	div.div-button-Women-Men-desired{
+		margin:0px 0px 0px 0px !important;
+		padding:0px !important;
+	}  
+
+
+
+		li.li-desired{ 
+			width:100% !important;
+			/*height:100% !important; */
+		}
+		li.li-m-tp{
+			margin-top:-170px !important;
+		}
+		li.for-footer-design{
+			margin-bottom: -150px !important;
+		}
+		span.text-content {
+			display:none !important;
+		}
+}
+@media screen and (max-width:645px){
+	.dright h1
+	{
+		margin-top:-30px;
+	}
+}
+
+@media screen and ( min-width:376px) and ( max-width: 425px){
+	.w-lu-dsired1 > li{ 
+		display:block !important;
+	}
+	.sercive-lap{
+	    position: relative;
+	    right: 37px !important;
+	  }
+	.copyRight {
+    	position: relative;
+    	left: 50px !important;
+     } 
+	.brandselector{
+		float:none !important;
+	}
+	.border_b{ 
+    	padding: 0px 0px 0px 0px!important;
+	}
+ 
+	.new-cosigner-pads{
+	 	padding:0px !important;
+	 }
+	#SUSTAINING > h1 {
+    	font-size: 30px;
+    } 
+    .afterPurchaseSubClass{
+		max-height: 100% !important; 	
+	}
+	.afterPurchaseSubClass > h4{ 
+		font-size: 24px !important; 
+	}
+	.afterPurchaseSubClass > p{ 
+		font-size: 18px !important;
+	}
+	.consign-sale-a{ 
+		font-size: 24px !important;
+		padding: 19px;
+	}
+	.pw-c-s-column1{
+		font-size: 18px !important;
+		text-align: left !important;
+		padding: 19px;
+	}
+	.pw-c-s-column{
+    	font-size: 18px !important;
+    	text-align: left !important;
+		padding: 19px;
+	} 
+	div.text1 {    
+		max-height: 82%;	
+	} 
+	div.text2 {
+		max-height: 90%;
+	} 
+	div.text3 {    
+		max-height: 80%;
+	} 
+	div.text1 h5{    
+		font-size: 20px !important;	
+	} 
+	div.text2 h5{    
+		font-size: 20px !important;
+	} 
+	div.text3 h5{    
+		font-size: 20px !important; 
+	} 
+	div.text1 p{    
+		font-size: 18px !important;	
+	}
+	div.text2 p{    
+		font-size: 18px !important;	
+	}
+	div.text3 p{    
+		font-size: 18px !important;	
+	}
+	div.text1 a{    
+		font-size: 18px !important;	
+		padding: 11px 15px 11px 15px;
+	}
+	div.text2 a{    
+		font-size: 18px !important;	
+		padding: 11px;
+	}
+	div.text3 a{    
+		font-size: 18px !important;	
+		padding: 11px 30px 11px 30px;
+	}
+	.dright{
+		margin-top:100px  !important; 
+	}
+
+
+	a.w-women{ 
+		font-size: 24px; 
+		text-decoration: none;
+		cursor: pointer;
+		color:blue; 
+		position: relative;
+		top:15px;
+		color:#000;
+		font-family: 'Didot';
+		display: block;
+		line-height: 'normal';
+	}
+ 
+	.row123{
+		margin: 0px auto !important;
+	}
+	.men-desired-col{
+		padding:15px;  
+		margin: 0px auto !important; 	
+	}
+	div.div-button-Women-Men-desired{
+		margin:0px 0px 0px 0px !important;
+		padding:0px !important;
+	}
+
+
+	li.li-desired{ 
+		width:100% !important;
+		/*height:100% !important;*/ 
+	}
+	.desired-column2{
+		margin-top: -20px !important;
+	}	
+	li.li-m-tp{
+		margin-top:-250px !important;
+	}
+	li.for-footer-design{
+		margin-bottom: -240px !important;
+	}
+	span.text-content {
+		display:none !important;
+	}	
+
+} 
+@media screen and ( min-width:320px) and ( max-width: 375px){ 
+	.w-lu-dsired1 > li{ 
+		display:block !important;
+	}
+.consignWrapper p{
+	font-size: 19px !important;
+}
+	.sercive-lap{
+	    position: relative;
+	    right: 7px !important;
+	    margin: 0px auto;
+	    float: none;
+	    text-align: center;
+	}
+	.copyRight {
+    	position: relative;
+    	left: 0px;
+    	margin: 0px auto;
+	    float: none;
+	    text-align: center;
+	}
+	.brandselector{
+		float:none !important;
+	}
+	.border_b{ 
+   		padding: 0px 0px 0px 0px!important;
+   		 margin-left: 0px !important;
+
+  	}
+  	.border_b p {
+    	padding: 4px 6px 6px 0px !important;
+    }
+	.new-cosigner-pads{
+	 	padding:0px !important;
+	 }
+	#SUSTAINING > h1 {
+    	font-size: 194%; 
+    }
+    .afterPurchaseContent{
+    	padding: 12px 10px !important; 
+    }
+    .afterPurchaseSubClass{
+		max-height: 100% !important; 
+		position: relative;
+    	top: 26px;
+	}
+	.afterPurchaseSubClass > h4{ 
+		font-size: 24px !important; 
+	} 
+	.afterPurchaseSubClass > p{ 
+	    font-size: 20px !important; 
+	} 
+	.pw-c-s-column1{
+		font-size: 18px !important;
+		text-align: left !important;
+		padding: 19px;
+	}
+	.pw-c-s-column{
+        font-size: 18px !important; 
+        text-align: left !important;
+		padding: 19px;
+		margin-top: -8% !important;
+	}
+	.div-container{
+		margin-top: -10px;
+	}
+	.w-c-s-column{
+		margin-top: -15px;	
+	}
+	.consign-sale-a{ 
+		font-size: 24px !important;
+		margin-bottom: -5px !important;
+	}
+	.row-col21{
+		    margin-top: -27px;
+	}
+	div.text1 {    
+		max-height: 90% !important;	 
+		    padding: 40px 12px !important;
+		padding-top:20px;
+	} 
+	div.text2 {
+		max-height: 90% !important; 
+	} 
+	div.text3 {    
+		max-height: 90% !important;
+		padding:10px;
+		padding-top:30px;
+	} 
+	div.text1 h5{    
+		font-size: 20px !important;	
+	} 
+	div.text2 h5{    
+		font-size: 20px !important;
+	} 
+	div.text3 h5{    
+		font-size: 20px !important; 
+	}
+	div.text1 p{    
+		font-size: 18px !important;
+	} 
+	div.text2 p{    
+		font-size: 18px !important;
+	} 
+	div.text3 p{    
+	    font-size: 18px !important; 
+	}
+	div.text1 a{    
+		font-size: 18px !important;
+	    padding: 11px;
+	    position: relative !important;
+	    top: 24px;
+	}
+	div.text2 a{    
+		font-size: 18px !important;	
+		padding: 11px;
+		position:relative !important;  
+	}
+	div.text3 a{    
+		font-size: 18px !important;	
+		padding: 11px 30px 11px 30px;
+		position:relative !important; 
+		top: 55px !important;
+	}
+	.dright {
+     	padding: 19px 0px !important;
+	}
+
+
+
+	a.w-women{ 
+		font-size: 24px; 
+		text-decoration: none;
+		cursor: pointer;
+		color:blue; 
+		position: relative;
+		top:15px;
+		color:#000;
+		font-family: 'Didot';
+		display: block;
+		line-height: 'normal';
+	}
+	.main-container{
+		position: relative;
+		top:20px;
+		
+	}
+	 
+	.row123{
+		margin: 0px auto !important;
+	}
+	.men-desired-col{
+		padding:15px;  
+		margin: 0px auto !important; 	
+	}
+	div.div-button-Women-Men-desired{
+		margin:0px 0px 0px 0px !important;
+		padding:0px !important;
+	}	
+
+
+	li.li-desired{ 
+		width:100% !important;
+		/*height:100% !important; */
+	}
+	.desired-column2{
+		margin-top: -20px !important;
+	}	
+	li.li-m-tp{
+		margin-top: -300px !important;
+	}
+	li.for-footer-design{
+		margin-bottom: -290px !important;
+	}
+	span.text-content {
+		display:none !important;
+	}
+
+
+}
+@media screen and ( min-width:200px) and ( max-width: 319px){  
+	.border_b{ 
+   		padding: 0px 9px 0px 0px!important;
+  	}
+	.new-cosigner-pads{
+	 	padding:0px !important;
+	 }
+	#SUSTAINING > h1 {
+    	font-size: 38px !important;
+    } 
+    .afterPurchaseSubClass{ 
+    	font-size: 24px !important;
+    	max-height: 90% !important;
+	}
+	.afterPurchaseSubClass > h4{  
+		font-size: 24px !important;
+	} 
+	.afterPurchaseSubClass > p{  
+		font-size: 18px !important;
+	}  
+	.buttonConsigner{
+		font-size: 18px !important;     
+	}
+	.buttonBuyer{
+		font-size: 18px !important;  	  
+	}
+	.consign-sale-a{
+		padding: 19px;
+		font-size: 24px !important;
+		margin-top: -29px !important;
+		line-height: 25px;
+	}
+	.pw-c-s-column1{
+		font-size: 18px !important;
+		text-align: left !important;
+		padding: 19px;
+		margin-top: -8% !important;
+	}
+	.pw-c-s-column{
+		font-size: 18px !important;
+		text-align: left !important;
+		padding: 19px;
+		margin-top: -13% !important;
+	}
+	.wp-private-resale{
+		margin-top: -70px;
+	}
+	.consignerBuyer .buttonBuyer, .consignerBuyer .buttonConsigner {
+		font-size: 18px !important;
+    	padding: 5px 10px 5px 5px !important;
+	}
+	div.text1 {    
+		height: 95% !important;
+		padding:5px !important;
+	} 
+	div.text2 {
+		height: 95% !important;
+		padding:5px !important;
+	} 
+	div.text3 {    
+		height: 90% !important;
+		padding:5px !important;
+		padding-top:20px !important;
+
+	}
+	div.text1 h5{    
+		font-size: 20px !important;
+	}
+	div.text2 h5{    
+		font-size: 20px !important;
+	}
+	div.text3 h5{    
+		font-size: 20px !important;
+	}
+	div.text1 p{    
+		font-size: 18px !important;
+	}
+	div.text2 p{    
+		font-size: 18px !important;
+	}
+	div.text3 p{    
+		font-size: 18px !important;	
+	}
+	div.text1 a{    
+		font-size: 18px !important;
+		padding: 10px 15px 10px 15px;
+	}
+	div.text2 a{    
+		font-size: 18px !important;
+		padding: 10px 15px 10px 15px;
+	}
+	div.text3 a{    
+		font-size: 18px !important;	
+		padding: 10px 15px 10px 15px;
+	}
+}
+/*Mobile Device (ipad)*/ 
+/*Portrait*/
+@media only screen and (device-width:768px){
+    .navigation a:link, .navigation a:visited{
+		font-size: 11px !important;
+	}
+}
+/*Landscape*/
+@media only screen and (device-width:1024px){
+    .dright h1 {
+    	font-size: 28px !important;
+    	margin-top: -3px;
+	}
+	.dright h3 {
+    	font-size: 19px !important;
+    	font-weight: lighter;
+    	line-height: 28px !important;
+	}
+	.f-cosign-b{
+		padding: 5px !important;
+		font-size: 15px !important;
+	}
+	.f-getNotified-b{
+		padding: 5px !important;
+		font-size: 15px !important;
+	}
+	.slider {
+	    display: block;
+	    position: relative;
+	    min-height: 306px !important;
+	    max-height: 40%;
+	}
+	.div1-consignerBuyer{
+		margin-bottom:0px !important;
+	}
+	.row.slider-article {
+     	max-height: 40%;
+	}
+}
+/*Mobile Device (iPhone 6 Plus)*/ 
+/*Portrait*/
+@media only screen and (device-width:414px){
+	#SUSTAINING > h1 {
+    	font-size: 32px !important;
+	}
+	.consign-sale-a { 
+    	margin-top: -22px !important;
+    }
+    .pw-c-s-column1 { 
+    	margin-top: -30px !important;
+	}
+	.pw-c-s-column{
+		margin-top: -30px !important;
+	}
+	div.text1 {
+	   	max-height: 68%;
+	    margin-top: -19px !important;
+	}
+	div.text2 {
+		max-height: 76%;
+	}
+	div.text3 {
+    	max-height: 67%;
+	}
+	.row-col21{
+		margin-bottom: 10px;
+	}
+
+}
+/*Landscape*/
+@media only screen and (device-width:736px){
+	div.text1 {
+		max-height: 131% !important;
+	}
+	div.text2 {
+		max-height: 136% !important;
+	}
+	div.text3 {
+		max-height: 115% !important;
+	}
+	.footer-div1{
+		position: relative;
+    	top: -1px !important;
+	}
+}
+/*Mobile Device (iPhone 6)*/ 
+/*Portrait*/
+@media only screen and (device-width:375px){
+	#SUSTAINING > h1 {
+    	font-size: 241% !important;
+	}
+	div.text1 {
+    	max-height: 75% !important;
+	}
+	div.text2 {
+	    max-height: 82% !important;
+	}
+	div.text3 {
+	    max-height: 70% !important;
+	    padding-top:30px;
+	}
+}
+/*Landscape*/
+@media only screen and (device-width:667px){
+	div.text1 {
+    	max-height: 144% !important;
+	}
+	div.text2 {
+		max-height: 151% !important;
+	}
+	div.text3 {
+	    max-height: 125% !important;
+	}
+	.dright {
+	    margin-top: -24px;
+	}
+	.footer-div1{ 
+	    position: relative !important;
+	    top: 2px !important;
+	}
+}
+/*Mobile Device (iPhone 5)*/ 
+/*Portrait*/
+@media only screen and (device-width:320px){
+	#SUSTAINING > h1 {
+    	font-size: 304% !important;
+	}
+	div.text1 {
+    	max-height: 104% !important;
+	}
+	div.text2 {
+    	max-height: 102% !important;
+	}
+	div.text3 {
+    	max-height: 104% !important;
+	}
+	.dright >h1{
+		margin-top: 0px !important;
+	}
+	.about_us{
+		margin-top: 4px;
+	}
+	.footer-div1{  
+		position: relative !important;
+		top: 0px !important;
+	}
+	.abt-us{
+		margin-top: 15px;
+   		padding-left: 9px !important;
+	}
+}
+/*Landscape*/
+@media only screen and (device-width:568px){
+	.afterPurchaseSubClass {
+    	max-height: 127% !important;
+	}
+	.consign-sale-a{
+	    font-size: 28px !important;
+	}
+	div.text1 {
+    	max-width: 100% !important;
+    	max-height: 178% !important;
+	}
+	div.text2 {
+    	max-width: 100% !important;
+    	max-height: 178% !important;
+	}
+	div.text3 {
+    	max-width: 100% !important;
+    	max-height: 167% !important;
+	}
+	.slider {
+    	height: 362px;
+	}
+	.footer-div1{
+		margin-top: 10px;
+	    position: relative !important;
+	    top: 8px !important;
+	}
+}
+/*Mobile Device (Nexus 6P)*/ 
+/*Portrait*/ 
+@media only screen and (device-width:435px){
+	div.text2 {
+    	max-width: 101% !important;
+    	max-height: 76% !important;
+	}
+	.row-col21{
+		margin-bottom: 18px !important;
+	}
+	.dright{
+	    margin-top: 13% !important;
+	}    
+	.footer-div1{
+		margin-top: 10px;
+	    position: relative !important;
+	    top: 8px !important;
+	}
+}
+/*Landscape*/
+@media only screen and (device-width:773px){
+	.navigation a:link, .navigation a:visited{
+		font-size: 11px !important;
+	}
+}
+/*Mobile Device (Galaxy S5)*/ 
+/*Portrait*/ 
+@media only screen and (device-width:360px){
+	#SUSTAINING > h1 {
+    	font-size: 296%;
+	}
+	div.text1 {
+    	max-height: 83% !important;
+	}
+	div.text2 {
+    	max-height: 85% !important;
+	}
+	div.text3 {
+    	max-height: 81% !important;
+	}
+	.footer-div1{
+		margin-top: 10px;
+	    position: relative !important;
+	    top: 9px !important;
+	}
+}
+/*Landscape*/
+@media only screen and (device-width:640px){
+	div.text1 {
+   		max-width: 100% !important;
+    	max-height: 150%;
+	}
+	div.text2 {
+    	max-width: 100% !important;
+    	max-height: 157%;
+	}
+	div.text3 {
+    	max-width: 100% !important;
+    	max-height: 140% !important;
+	}
+	.dright{
+		margin-top: -47px;
+		max-height: 100%;
+	}
+	.footer-div1{
+		margin-top: 10px;
+	    position: relative !important;
+	    top: 9px !important;
+	}
+}
+/*Mobile Device (Nexus 5X)*/
+/*Portrait-default*/
+@media only screen and (device-width:411px) and (min-device-height: 731px) {
+	#SUSTAINING > h1 {
+    	font-size: 47px;
+    }
+    .consign-sale-a{
+    	margin-top: -21px !important;
+    }
+    .pw-c-s-column1 { 
+    	margin-top: -33px !important;
+	}
+	.pw-c-s-column{
+		margin-top: -33px !important;
+	}
+	.wp-private-resale{
+	    margin-top: -4% !important;
+	}
+	div.text1 {
+    	max-height: 79% !important;
+	}
+	div.text2 {
+    	max-height: 86% !important;
+	}
+	div.text3 {
+    	max-height: 73% !important;
+	}
+	.footer-div1{
+		margin-top: 10px;
+	    position: relative !important;
+	    top: 9px !important;
+	}
+}
+/*Mobile Device (Nexus 5X)*/
+/*Portrait-default, Portrait-Navigation bar*/
+@media only screen and  (device-width : 411px) and (min-device-height: 741px)  {
+	div.text1 {
+    	max-height: 87%;
+	}
+	div.text2 {
+    	max-height: 95%; 
+	}
+	div.text3 {
+    	max-height: 81%;
+	}
+}
+/*Mobile Device (Nexus 5X)*/
+/*Portrait-default, Portrait-Navigation bar,Portrait-keyboard*/
+@media only screen and  (device-width : 411px) and (min-device-height: 327px){
+	.afterPurchaseSubClass{
+		max-height: 112% !important;
+	}
+	div.text1 {
+    	max-height: 159% !important;
+	}
+	div.text2 {
+    	max-height: 174% !important;
+	}
+	div.text3 {
+    	max-height: 149% !important;
+	}
+}
+/*Mobile Device (Nexus 5X)*/
+/*Portrait-default*/
+@media only screen and  (device-width : 731px) and (min-device-height: 441px){
+	.w-c-s-column{
+		margin-top: 10px;
+	}
+	div.text1 {
+    	max-width: 100% !important;
+    	    max-height: 140%; 	
+	}
+	div.text2 {
+    	max-width: 100% !important;
+    	    max-height: 140%; 	
+	}
+	div.text3 {
+    	max-width: 100% !important;
+    	    max-height: 140%; 	
+	}
+}
+/*Mobile Device (Nexus 5X)*/
+/*Portrait-default, Portrait-Navigation bar*/
+@media only screen and  (device-width : 411px) and (min-device-height: 741px)  {
+
+}
+/*Mobile Device (Nexus 5X)*/
+/*Portrait-default, Portrait-Navigation bar,Portrait-keyboard*/
+@media only screen and  (device-width : 411px) and (min-device-height: 327px){
+
+} 
+/*style for the desired-items*/
+.cont-desired-items{
+	margin-top: -10px;  
+    padding-bottom: 50px;
+} 
+div.cont-desired-items p > span{
+	color:black;
+	font-family: "AvenirNextLTW01-UltraLight"; 
+	font-size:18px !important; 
+	font-weight: bold;
+}
+.desire-button{
+}
+.box-shade{ 
+}
+div.div-button-Women-Men-desired{
+	margin:40px 0px 40px 0px;  
+}
+.row123{
+	/*margin:40px 0px 40px 80px; */
+	}
+a.w-women{ 
+	font-size: 24px;
+	/*padding: 20px 185px;*/  
+	text-decoration: none;
+	cursor: pointer;
+	color:blue; 
+	position: relative;
+	top:15px;
+	color:#000;
+	font-family: "AvenirNextLTW01-UltraLight" ;
+}
+a.m-men{  
+	font-size: 24px;
+	padding: 20px 205px;
+	text-decoration: none;
+	cursor: pointer;
+	color:blue;
+	color:#000; 
+	border-right:1px solid #ccc ;
+	font-family: 'Didot';
+} 	 
+
+a.m-men:hover, a.w-women:hover{
+	text-decoration: none;
+}
+.men-desired-col{
+	padding:15px; 
+	margin-left:125px; 
+}
+
+
+
+ul.hoverDisplay {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+
+} 
+ul.hoverDisplay li {
+  display: inline-block;
+  max-height: 301px !important;
+  margin: 0 1em 1em 0;
+  position: relative;
+  width: 100% !important;
+} 
+span.text-content {
+	background: rgba(0,0,0,0.5); 
+	cursor: pointer;
+	display: table;
+	height: 150px;
+	left: 0;
+	position: absolute;
+	top: 0;
+	width: 150px;
+	color:#fff;
+	font-size:24px;
+	font-family: 'AvenirNextLTW01-UltraLight' !important;	
+} 
+span.text-content span {
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
+  position:relative; 
+  font-family:'AvenirNextLTW01-UltraLight' !important; 
+}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  height: 165px;
+  left: 0;
+  position: absolute;
+  top: 0;
+  width: 150px;
+  opacity: 0;
+}
+ul.hoverDisplay li:hover span.text-content {
+  opacity: 1;
+}
+span.text-content {
+  background: rgba(0,0,0,0.5);
+  color: white;
+  cursor: pointer;
+  display: table;
+  max-height: 63%;
+  left: 0;
+  position: absolute;
+  top: 100;
+  width: 100%;
+  opacity: 0;
+  -webkit-transition: opacity 500ms;
+  -moz-transition: opacity 500ms;
+  -o-transition: opacity 500ms;
+  transition: opacity 500ms;
+}
+ .centerBlock {
+    margin-left:auto;
+   margin-right:auto;
+   display:center;
+  }
+a.footer-cosign-des{
+	background-color: #DF2204;
+    color: #fff;
+    border: 1px solid #fff;
+    padding: 15px 15px 15px 15px;
+    font-size: 18px;
+    position: relative;
+    top: 10px;
+    margin: 0px auto;
+}
+.ul-menu-bttn{ 
+	position: inline;
+	list-style-type: none;
+}
+.hoverDisplay li.li-desired > a img{ 
+  width:100% !important;  
+  /*height:85% !important; */
+}
+ul.ul-menu-bttn li a{
+
+}
+
+
+
+
+.w-lu-dsired1{
+	list-style-type:none;
+	display:block;
+	margin: auto;
+	background-color: #19b0c6;
+	padding: 10px !important;
+}
+.w-lu-dsired1 > li{ 
+	display:inline;
+	position: relative;
+    top: -15px; 
+    padding: 15;
+}.w-lu-dsired1 > li > a{  
+    color:#fff ;
+    padding: 0px 20px;
+    font-family: "Didot" !important;
+}
+.w-lu-dsired2{
+	list-style-type:none;
+	display:block;
+	background-color:#fff !important;
+	margin: auto;
+	padding:20px;
+}
+.w-lu-dsired2 > li{ 
+	display:inline;
+	margin: auto;
+	text-align: center;
+	margin: auto;
+	padding: 15px;
+}
+.w-lu-dsired12 > li > a{  
+    color:#000 ;
+    padding: 0px 20px;
+}
+
+ 
