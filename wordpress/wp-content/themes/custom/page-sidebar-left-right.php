@@ -3,124 +3,10 @@
 /**
  * Template Name: Sidebar Left and Right
  */
-
-
     require_once('header.php');
-
-
-
-
-//    insert
-//        global $wpdb;
-//        $values =	array(
-//    		'user_login' => 'michael',
-//    		'user_pass' => 'mypassword',
-//    		'user_status'=>1,
-//    	);
-//        $values_type = array(
-//    		'%s',
-//    		'%s',
-//    		'%d'
-//    	);
-//        $trows = $wpdb->insert(
-//            'wp_users',
-//            $values ,
-//            $values_type
-//        );
-//if($trows > 0) {
-//   print " total rows " . $trows . ' - successfully inserted.';
-//} else {
-//    print " failed to insert";
-//}
-
-    //update
-//    global $wpdb;
-//    $totalRowsUpdated = $wpdb->update(
-//	'wp_users',
-//	array(
-//		'user_login'   => 'michael-updated',
-//		'user_pass'    => 'mypassword-updated',
-//		 'user_status' =>2,
-//	),
-//	array( 'ID' => 2),
-//	array(
-//		'%s',
-//		'%s',
-//	    '%d'
-//	),
-//        array( '%d' )
-//    );
-//
-//    if($totalRowsUpdated > 0) {
-//        print " total rows updated " . $totalRowsUpdated . ' - successfully';
-//    } else {
-//        print " failed to update rows ";
-//    }
-
-
-
-
-
-// query
-
-//$user_info = $wpdb->get_row( "SELECT * FROM wp_users WHERE ID = 2", ARRAY_A );
-//
-//print"<pre>";
-//print_r($user_info);
-//print "</pre>";
-//
-
-// print "<BR>array access = " . $user_info['ID'];
-
-
-//print "<BR>array access = " . $user_info->ID;
-
-//
-//print "<br><br><br><br>";
-//
-//
-//if($trows > 0) {
-//   print " total rows " . $trows . ' - successfully inserted.';
-//} else {
-//    print " failed to insert";
-//}
-//
-
-
-
-
-
-// DELETE
-//
-//global $wpdb;
-//
-//$totalDeleted = $wpdb->delete( 'wp_users', array( 'ID' => 2 ), array( '%d' ) );
-//
-//
-//if($totalDeleted > 0) {
-//   print " total rows " . $totalDeleted . ' - successfully deleted.';
-//} else {
-//    print " failed to delete";
-//}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    $user_id = $_SESSION['user_id'];
 
 ?>
-
-
 <?php if (have_posts()) : ?>
     <?php while (have_posts()) : the_post(); ?>
         <div class="container">
@@ -142,8 +28,12 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
         <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
         <script src="<?php echo JS; ?>/tops.js"></script>
-
+        <script src="<?php echo JS; ?>/uploadimage.js"></script>
+<!--        <script src="--><?php //echo JS; ?><!--/dragDropUploadImg.js"></script>-->
     <div class = "container">
+
+        <input type="hidden" id = "user_id" value="<?php echo $user_id; ?>">
+        <input type="hidden" id = "fileDragDropUploadImg" value="<?php echo get_site_url(); ?>/fileDragDropUploadImg">
         <div class="row">
         <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 " style="padding: 8px;" >
                 <div class="col-lg-2 col-md-2 col-xs-4 col-sm-4 first-columns-row width-list-an-item" style="padding:0px; position: relative;height: auto;">
@@ -346,13 +236,13 @@
                 <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 wki-rtv" style = "    padding-right: 3px;">
                     <div class="form-group">
                         <label for="retail_value" class = "column-margnbotops margin-topbot" >Retail Value</label>
-                        <input type="text" class="form-control" id="retail_value" value = "$249">
+                        <input type="text" class="form-control" onkeyup="computeDays()" id="retail_value" value = "249">
                     </div>
                 </div>
                 <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 wki-rtv " style = " padding-left: 3px;">
                     <div class="form-group">
                         <label  for="selling_price" class = "column-margnbotops margin-topbot">Selling Price</label>
-                        <input type="text" class="form-control" id="selling_price" value = "$100">
+                        <input type="text" class="form-control" id="selling_price" value = "100">
                     </div>
                 </div>
             </div>
@@ -489,15 +379,110 @@
             </div>
         </div>
 
-
-
-
         <!--end of second column product info-->
+<!--- THIS IS FOR DISCOUNTING retail_value-->
+ <script>
+    function computeDays()
+    {
+        var selling_price = document.getElementById("retail_value").value;
+        var day1field = document.getElementById("day1field");
+        var day2field = document.getElementById("day2field");
+        var day3field = document.getElementById("day3field");
+        var showPercentage = document.getElementById("showPercentage");
+        var day1total = 0;
+        var day2total = 0;
+        var day3total = 0;
+        var day2total_final = 0;
+        var day3total_final = 0;
+        var percentage = 0;
+        var day2percentage = .15;
+        var day3percentage = .30;
+        var showAddedPrice = document.getElementById("showAddedPrice");
+        showAddedPrice.innerHTML = "$"+parseInt(selling_price).toFixed(2); //COMMISSION FEE PART
+        day1Output = selling_price*.80;
+        day1field.innerHTML="$"+parseInt(day1Output).toFixed(2)+" / <span style='color:red;'>Discounted 0%</span>";
+        //COMMISSION FEE PERCENTAGE
+        if(selling_price >= 500)
+        {       
+            showPercentage.innerHTML="20%";
+        }else
+         if(selling_price >= 350)
+        {           
+            showPercentage.innerHTML="30%";
+        }else
+        if(selling_price >= 200)
+        {            
+            showPercentage.innerHTML="40%";
+        }else
+        if(selling_price >= 20)
+        {           
+            showPercentage.innerHTML="50%";
+        }
+
+        //day 2 calculation
+        var day_2_initial = selling_price*day2percentage; //Percentage calculation 15%
+        var day_2_category = selling_price-day_2_initial; //Generate answer to determine what category        
+        if(day_2_category >= 500)
+        {
+            percentage = .80;
+            day_2_total = day_2_category*percentage;
+            day2field.innerHTML = day_2_total.toFixed(2)+" / <span style='color:red;'>Discounted 15%</span>";
+        }else
+         if(day_2_category >= 350)
+        {
+            percentage = .70;
+            day_2_total = day_2_category*percentage;
+            day2field.innerHTML = "$"+day_2_total.toFixed(2)+" / <span style='color:red;'>Discounted 15%</span>";
+        
+        }else
+        if(day_2_category >= 200)
+        {
+            percentage = .60;
+            day_2_total = day_2_category*percentage;
+            day2field.innerHTML = "$"+day_2_total.toFixed(2)+" / <span style='color:red;'>Discounted 15%</span>";
+        }else
+        if(day_2_category >= 20)
+        {
+            percentage = .50;
+            day_2_total = day_2_category*percentage;
+            day2field.innerHTML = "$"+day_2_total.toFixed(2)+" / <span style='color:red;'>Discounted 15%</span>";
+        }
+        //day 3 calculation
+        var day_3_initial = selling_price*day3percentage; //Percentage calculation 30%
+        var day_3_category = selling_price-day_3_initial; //Generate answer to determine what category
+        if(day_3_category >= 500)
+        {
+            percentage = .80;
+            day_3_total = day_3_category*percentage;
+            day3field.innerHTML = day_3_total.toFixed(2)+" / <span style='color:red;'>Discounted 30%</span>";
+        }else
+         if(day_3_category >= 350)
+        {
+            percentage = .70;
+            day_3_total = day_3_category*percentage;
+            day3field.innerHTML = "$"+day_3_total.toFixed(2)+" / <span style='color:red;'>Discounted 30%</span>";
+        }else
+        if(day_3_category >= 200)
+        {
+            percentage = .60;
+            day_3_total = day_3_category*percentage;
+            day3field.innerHTML = "$"+day_3_total.toFixed(2)+" / <span style='color:red;'>Discounted 30%</span>";
+        }else
+        if(day_3_category >= 20)
+        {
+            percentage = .50;
+            day_3_total = day_3_category*percentage;
+            day3field.innerHTML = "$"+day_3_total.toFixed(2)+" / <span style='color:red;'>Discounted 30%</span>";
+        }
 
 
 
+    }
+    </script>
 
         <!--third column photo-->
+
+    <form id="uploadForm" action="" method="post">
         <div class="row" style = "border-bottom: 1px solid #afa5a5;margin: 0 auto;">
 
             <div class="col-lg-3 col-md-3 col-xs-12 col-sm-12 tds photos-text-listItem colmn-padds1 colmn-padds  photos-width" style="" >
@@ -508,25 +493,22 @@
                     Add photos that show what what makes this item unique. If there is visible wear or damage, be sure to photograph it.
                 </p>
             </div>
-            <!--
-            <div class="clearfix visible-sm"></div>
-            <div class="clearfix visible-xs"></div>
-            <div class="clearfix visible-md"></div>
-            -->
             <div class="col-lg-9  col-md-9 col-sm-12 col-xs-12 colmn-padds1 " >
+
                 <div class="line-box">
-                    <div class = "line-dushed clg-box ">
-                        <p class = "column-font   " style="text-align: center;color: #ccc;">
-                            Drag files here to upload
-                        </p>
-                    </div>
-                    <button type="button" class="btn btn-default btn-lg column-font" style = "font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;font-weight: bolder;letter-spacing: 1px;">UPLOAD PHOTOS</button>
+
+                    <div id="uploads"></div>
+                    <div class="dropzone" id="dropzone" style="corsur:pointer; padding-top: 22px;">Drag files here to upload</div>
+                </div>
+
+                <br>
+                <div class="col-md-4" id="uploadPhoto" style="text-align: left;padding: 0px;">
+                    <a href="#" onclick="document.getElementById('fileID').click(); return false;" style = "font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;font-weight: bolder;letter-spacing: 1px;padding: 13px;border-radius:0px;background-color: black;color:white" />UPLOAD PHOTOS</a>
+                    <input type="file" id="fileID" name="file[]" multiple  style="visibility: hidden;"  />
                 </div>
             </div>
-
         </div>
         <!--end of  the third column -->
-
 
         <article class="titleHead" style = "text-align: left;   padding: 20px 0;">
             <h4 id="profit"><span class="black font-column-size"  style="position: relative; font-family: 'AvenirNextLTW01-UltraLight', 'Avenir', 'Didot' !important;font-weight: bolder;letter-spacing: 1px;  width: auto;text-align: left" >EARNING BREAKDOWN</span></h4>
@@ -537,12 +519,11 @@
                 <i class="fa fa-2x fa-money stephen-icons" style="color:#00a8e6;" aria-hidden="true"></i>
                 <h4><b>BUYER PAYS</b></h4>
                <div id="selling_price" class="uk-block boxBuyerInput" style = "padding-top: 10px;padding-bottom: 10px;">
-                    <h1>$100</h1>
+                     <h4 style="margin-top:30px;"><b><span id="showAddedPrice">$0</span> - <span id="showPercentage">0%</span> COMMISSION FEE</b></h4>
                </div>
                <!-- <input type="text" onkeyup="computeDays()" name="selling_price" id="selling_price" class="uk-block boxBuyerInput" value="" style="width:50%" placeholder="$0.00">
                 <a class="button-add" id="button_add" onclick="clearField()">CLEAR<!-- <img src="<?php echo IMG; ?>/plus.png"  alt=""> </a>
                 -->
-                <h4 style="margin-top:30px;"><b><span id="showAddedPrice">$100</span> - <span id="showPercentage" style = "color:red">50%</span> COMMISSION FEE</b></h4>
             </div>
             <div class="col-sm-6" style=" padding-top: 5%;padding-left: 0px;padding-right: 0px;"><!-- YOULL MAKE -->
                 <i class="fa fa-2x fa-check stephen-icons" style="color:#00a8e6;" ></i>
@@ -609,10 +590,14 @@
                         <div class = "column-float column-margint" style = "   text-align: center;  display: inline-block;">
                             <h4 class = "column-font column-marginb column-margin column-marginb column-margnbotops" style = "margin-bottom: 8%;text-align: right ">How many day do you want to consign this item?</h4>
                             <label class="radio-inline" style=" margin: 0px; padding:0px">
-                                <button type="button" class="btn btn-primary btn-lg btn-color  btnColor5 column-font" value = "90" id = "btn-ysl3" rel = "btn-ysl3" style="padding: 10px 15px !important;">90 days</button>
+<!----
+<!--                                <input type="button" name="days" id="days" value ="120" >-->
+                                    <button type="button" class="btn btn-primary btn-lg btn-color  btnColor5 column-font" value = "90" id = "btn-ysl3" rel = "btn-ysl3" style="padding: 10px 15px !important;">90 days</button>
+<!--                                <a href="#" onclick="document.getElementById('michael').click(); return false;" style = "font-family: 'AvenirNextLTW01-UltraLight', 'Didot', 'Didot Regular & Avenir Next Medium' !important;font-weight: bolder;letter-spacing: 1px;padding: 13px;border-radius:0px;background-color: black;color:white" />UPLOAD PHOTOS</a>-->
+                                <input type = "button" name="michael" id="michael" value="Hello michael" id="michael" placeholder="enter message here" />
                             </label>
                             <label class="radio-inline" style=" margin: 0px; padding:0px">
-                                <button type="button" class="btn btn-primary btn-lg btn-color  btnColor5 column-font   btn-paddingLr" value = "120" id = "btn-ysl4" rel = "btn-ysl4" style="padding: 10px 10px !important;">120 days</button>
+                                <button type="button" class="btn btn-primary btn-lg btn-color  btnColor5 column-font btn-paddingLr" name="days" value = "120" id = "btn-ysl4" rel = "btn-ysl4" style="padding: 10px 10px !important;">120 days</button>
                             </label>
                         </div>
                     </div>
@@ -631,21 +616,18 @@
             </div>
         </div>
 
-
-
-
-
-
     <div style = "clear:both"></div>
 
         <div>
             <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 cs-btn1 cs-cancel-submit" rel = "cs-bttn1" >
-                <button type="button" class="btn btn-default btn-lg btn-cancel btd-fullWidth column-font" id = "cs-bttn1">Cancel</button>
+                <button type="button" class="btn btn-lg btn-cancel btd-fullWidth column-font" id = "cs-bttn1">Cancel</button>
             </div>
-            <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 cs-btn2 cs-cancel-submit"  rel = "cs-bttn2" >
-                <button type="button" class="btn btn-default btn-lg btn-submit btd-fullWidth column-font" id = "cs-bttn2" onclick = "listItems()" value = "submit-list-an-item">Submit</button>
+            <div class="col-lg-6  col-md-6 col-sm-6 col-xs-6 cs-btn2 cs-cancel-submit" rel = "cs-bttn2" >
+                <input type="submit" value="Submit" id = "cs-bttn2"  class="btn btn-lg btn-submit btd-fullWidth column-font" onclick = "listItems()" >
             </div>
         </div>
+    </form>
+
 
         <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 colmn-padds1 column-textLeft" style="margin-bottom: 40px;text-align: center" >
             <p class = "column-textLeft column-font line-weight-column" style="text-align: center ;font-size: 14px;">

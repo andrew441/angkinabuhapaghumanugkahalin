@@ -95,7 +95,7 @@ class WPDB_QUERIES
     {
         global $wpdb;
         $trows = $wpdb->insert(
-            $this->table_name,
+                $this->table_name,
             $data_array,
             $this->wpdb_get_value_type($data_array)
         );

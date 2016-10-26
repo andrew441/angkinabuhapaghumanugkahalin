@@ -1,4 +1,14 @@
 
+
+
+
+
+
+
+
+ 
+
+
 <footer class = "sub-footer" style = "border-top: 50px solid #000;"  >
     <div class = "container">
         <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12" style = "padding-right: 0px" >

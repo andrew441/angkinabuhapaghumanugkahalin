@@ -48,7 +48,7 @@ if(isset($_POST['under_review_tabs_id'])){
         $result['categories_name']. '(operationalsplit)'.
         $result['subCategory_name']. '(operationalsplit)'.
         $result['item_details']. '(operationalsplit)'.
-        $result['name']. '(operationalsplit)'.
+        $result['g']. '(operationalsplit)'.
         $result['created_at'];
     }
 }

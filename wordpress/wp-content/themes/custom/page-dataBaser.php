@@ -2,18 +2,18 @@
 /**
      * Template Name: database
  */
+session_start();
 if(isset($_POST['login_now'])) {
     global $wpdb;
     $username1 = $_POST['user_name'];
     $password1 = $_POST['user_pass'];
-
-
-//    $query = $wpdb->get_results("SELECT * FROM wp_users WHERE user_email = '$username1' AND user_pass = '$password1'",OBJECT);
-
     $rows = $wpdb->get_row("SELECT * FROM wp_users WHERE user_email = '$username1' AND user_pass = '$password1'",OBJECT);
 
     if ($rows > 0) {
-        echo "success";
+        $updated_acc = $rows->updated_acc;
+        echo "success ". $updated_acc;
+        $_SESSION['user_status'] = $rows->user_status;
+        $_SESSION['user_id'] = $rows->ID;
     } else {
         echo "Invalid password or username";
     }
@@ -26,7 +26,6 @@ else if(isset($_POST["join_now"])) {
     $user_pass = $_POST['user_password'];
     $user_gender = $_POST['user_gender'];
     $user_promocode = $_POST['promo_code'];
-
     $rows = $wpdb->get_row("SELECT * FROM `wp_users`where user_email = '".$user_email."'",ARRAY_A);
     if($rows == 0 ){
         if($user_name == "" || $user_email == "" || $user_pass == "" ||$user_gender == ""|| $user_promocode == ""){
@@ -71,6 +70,4 @@ function dataBaser($user_name, $user_email, $user_pass, $user_gender, $user_prom
         print " failed to sign up ";
     }
 }
-
-
 ?>

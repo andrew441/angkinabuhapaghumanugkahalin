@@ -3,6 +3,10 @@
  *  Template Name: Update Account
  */
 require_once('header.php');
+
+
+session_start();
+$user_id = $_SESSION['user_id'];
 ?>
 
 
@@ -11,11 +15,21 @@ require_once('header.php');
     select.form-control{display:inline !important;font-size:18px !important;padding: 5px !important;}
 </style>
 
-    <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo ( 'template_url' ); ?>/css/custom-list.css" />
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
-<script src="<?php echo JS; ?>/tops.js"></script>
+<link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo ( 'template_url' ); ?>/css/custom-list.css" />
+<!-- Custom CSS -->
+<link href="http://lifeafterpurchase.com/wp-content/themes/custom/css/bootstrap/css/simple-sidebar.css" rel="stylesheet">
+<script src="<?php echo JS; ?>/uploadimage.js"></script>
+<script src="<?php echo JS; ?>/uc_upload_image.js"></script>
+<script src="<?php echo JS; ?>/jquery.min.js"></script>
+<script src="<?php echo JS; ?>/html5shiv.js"></script>
+
 <div  id="frmbuyer" >
 <div class="popupFrm" style="width:80%;">
+
+
+    <input type="hidden" id = "uc_upload_image" value="<?php echo get_site_url(); ?>/uc_upload_image/">
+    <input type="hidden" id = "cp_upload_image" value="<?php echo get_site_url(); ?>/cp_upload_image/">
+
 <!-- Modal content-->
     <div class="contentPopup" style = "padding:0px;">
         <div class="contents">
@@ -24,22 +38,19 @@ require_once('header.php');
         </div>
         <div class="headerPopup font-column-mar" style = "margin:50px 0px 20px 0px" >
             <h2 class="titleLabelPopup"  style = "text-align: left !important;display:none" >ABOUT YOU</h2>
-        </div>
-
-
-
-        <form action="" method="POST" id="myform" enctype="multipart/form-data"  style="margin-bottom: 0px;>
-        <input type="hidden" name="form_title" value="NewShopper">
+        </div> 
+        <form action="dutere" method="POST" id="myform" enctype="multipart/form-data"  style="margin-bottom: 0px;">
+            <input type="hidden" name="form_title" value="NewShopper">
             <div class="popup-body">
                 <div class="form-horizontal">
                     <div class="form-group column-marginbot">
                         <div class="col-md-4 float-text ">
                             <label for = "firs_name" class = "column-margnbotops" style = "font-weight: bolder;float: left !important;font-family: 'AvenirNextLTW01-UltraLight' !important;">First Name </label>
-                            <input type="text" required name="firs_name" class="form-control" id = "first_name" value="" ></div>
+                            <input type="text" required name="firs_name" class="form-control" id = "first_name1" value="" ></div>
 
                         <div class="col-md-4 float-text">
                             <label for = "last_name" class = "column-margnbotops"  style = "font-weight: bolder;float: left !important;font-family: 'AvenirNextLTW01-UltraLight' !important;">Last Name </label>
-                            <input type="text" required name="last_name" class="form-control" id = "last_name" value="" >
+                            <input type="text" required name="last_name" class="form-control" id = "last_name1" value="" >
                         </div>
                         <div class="col-md-4 float-text">
                             </div>
@@ -76,27 +87,25 @@ require_once('header.php');
 
                     </div>
                 </div>
-                <!--end of the first column-->
 
-
-
+                <!--end of the first column--> 
                 <input type="hidden" name="form_title" value="NewShopper">
                     <div class="popup-body">
                     <div class="form-horizontal">
                         <div class="form-group">
                             <div class="col-md-4 float-text">
                                 <label for = "age" class = "column-margnbotops" style = "font-weight: bolder;float: left !important;font-family: 'AvenirNextLTW01-UltraLight' !important;">Your Age</label>
-                                <input type="text" required name="s_fname" id = "age"class="form-control" value=""  >
+                                <input type="number" required name="age" id = "age1" class="form-control" value=""  >
                             </div>
 
                             <div class="col-md-4 float-text">
                                 <label for = "email" class = "column-margnbotops" style = "font-weight: bolder;float: left !important;font-family: 'AvenirNextLTW01-UltraLight' !important;">Email</label>
-                                <input type="email" required name="s_email" id = "email"class="form-control" value=""  >
+                                <input type="email" required name="s_email" id = "email1" class="form-control" value=""  >
                             </div>
 
                             <div class="col-md-4 float-text">
                                 <label for = "mailingAddress" class = "column-margnbotops" style = "font-weight: bolder;float: left !important;font-family: 'AvenirNextLTW01-UltraLight' !important;">Mailing Address</label>
-                                <input type="email" required name="s_email" id="mailingAddress"class="form-control" value="" >
+                                <input type="email" required name="s_email" id="mailingAddress1" class="form-control" value="" >
                             </div>
                         </div>
                     </div>
@@ -112,108 +121,78 @@ require_once('header.php');
 
                         </div>
 
+                <!--end of the 3rd column--> 
+
                         <div class="col-md-3 new-cosigner-pads" style="padding-left:0 !important;">
                             <p class="col-sm-1" style = "padding:0px;">Shirt</p>
                             <div style="margin-bottom: 10px;">
-                                <input name="shirt_size" id = "shirt" placeholder =" " required id="" class="form-control">
+                                <input name="shirt_size" id = "shirt_name" placeholder =" " required id="" class="form-control">
                             </div>
 
                             <p class="col-sm-1" style = " padding:0px;">*Shoes</p>
                             <div>
-                                <input name="shirt_size_num" placeholder =" " id="shoes" required class="form-control">
-                                <!--<option value="">Size num</option>
-                                <option value="34-36">34-36</option>
-                                <option value="36-38">36-38</option>
-                                <option value="38-40">38-40</option>
-                                <option value="40-42">40-42</option>
-                                <option value="42-44">42-44</option>
-                                <option value="44-46">44-46</option>
-                                <option value="46-48">46-48</option>
-                            </select>-->
+                                <input name="shirt_size_num" placeholder =" " id="shoes_size" required class="form-control">
                             </div>
                         </div>
+
                         <div class="col-md-3 new-cosigner-pads">
                             <p class="col-sm-1 column-margnbotops" style = "padding:0px;" >Pants</p>
                             <div style="margin-bottom: 10px;">
-                                <input name="pants_size" id="pants" placeholder =" " required class="form-control">
-                                <!--<option value="">Size</option>
-                                <option disabled style='font-size:bold;color:black;'>STANDARD</option>
-                                <option value="OS (one size)">OS (one size)</option>
-                                <option value="23 (00, XXS)">23 (00, XXS)</option>
-                                <option value="24 (0, XS)">24 (0, XS)</option>
-                                <option value="25 (2, XS)">25 (2, XS)</option>
-                                <option value="26 (2, XS)">26 (2, XS)</option>
-                                <option value="27 (4, S)">27 (4, S)</option>
-                                <option value="28 (4,S)">28 (4,S)</option>
-                                <option value="29 (6, M)">29 (6, M)</option>
-                                <option value="30 (6, M)">30 (6, M)</option>
-                                <option value="31 (6, M)">31 (6, M)/option>
-                                <option value="32 (8, M)">32 (8, M)</option>
-                                <option value="33 (10, M)">33 (10, M)</option>
-                                <option value="34 (12, L)">34 (12,m L)</option>
-                                <option value="35 (14, L)">35 (14, L)</option>
-                                <option value="36 (14, L)">36 (14, L)</option>
-                                <option disabled style='font-size:bold;color:black;'>PLUS</option>
-                                <option value="16 (XL, PLUS 0x)">16 (XL, PLUS 0x)</option>
-                                <option value="18 (XL, Plus 0x)">18 (XL, Plus 0x)</option>
-                                <option value="20 (Plus 1x)">20 (Plus 1x)</option>
-                                <option value="22 (Plus 2x)">22 (Plus 2x)</option>
-                                <option value="24 (Plus 2x)">24 (Plus 2x)</option>
-                                <option value="26 (Plus 3x)">26 (Plus 3x)</option>
-                                <option value="28 (Plus 3x)">28 (Plus 3x)</option>
-                            </select>-->
+                                <input name="pants_size" id="pants" placeholder =" " required class="form-control"> 
                             </div>
 
-                            <div  class=" new-cosigner-pads"     >
-
+                            <div  class=" new-cosigner-pads">
                                 <p class="col-sm-1" style = "padding:0px;display:none;">*Shoes</p>
                                 <input name="pants_size_num" placeholder =" " style = "display:none;"   class="form-control">
 
                                 <p class="col-sm-1" style = "padding:0px;"   >    </p>
-                                <p data-toggle="modal" class="form-control select-style euro-size" data-target="#showShoeSizes" style=" cursor:pointer;font-size:18px;border:1px solid #dddddd;line-height: 0 !important;"  title="Click to view">Euro size chart <i class="fa fa-question-circle" aria-hidden="true"></i></p>
-
-                                <!--<option value="">Size num</option>
-                                <option value="26">26</option>
-                                <option value="28">28</option>
-                                <option value="29">29</option>
-                                <option value="30">30</option>
-                                <option value="31">31</option>
-                                <option value="32">32</option>
-                                <option value="33">33</option>
-                                <option value="34">34</option>
-                                <option value="36">36</option>
-                                <option value="38">38</option>
-                                <option value="40">40</option>
-                            </select>-->
+                                <p data-toggle="modal" class="form-control select-style euro-size" data-target="#showShoeSizes" style=" cursor:pointer;font-size:18px;border:1px solid #dddddd;line-height: 0 !important;"  title="Click to view">Euro size chart <i class="fa fa-question-circle" aria-hidden="true"></i></p> 
                             </div>
                         </div>
+
+
+
+
                         <div class="col-md-3 new-cosigner-pads">
                             <p id="dress_jacket" class="col-sm-1  column-margnbotops" style = "padding:0px;">Jacket</p>
                             <div style="margin-bottom: 10px;" >
-                                <input name="dress_jacket_size" placeholder =" " id="jacket" class="form-control">
-                                <!--<option value="">Size</option>
-
-                            </select>-->
+                                <input name="dress_jacket_size" placeholder =" " id="jacket" class="form-control"> 
                             </div>
 
-                            <p class="col-sm-1" style = "padding:0px;"  style = "display:none;">    </p>
-                            <!--
-                                                        <p data-toggle="modal" class="form-control select-style" data-target="#showShoeSizes" style="cursor:pointer;font-size:18px;border:1px solid #dddddd;line-height: 0 !important;"  title="Click to view">Euro size chart <i class="fa fa-question-circle" aria-hidden="true"></i></p>
-                                                        <!--MODAL START-->
+
+
+
+
+
+                            <p class="col-sm-1" style = "padding:0px;"  style = "display:none;"></p> 
+
+
+
+
+
+
+
                             <div class="modal fade" id="showShoeSizes" role="dialog">
+
+
                                 <div class="modal-dialog">
+
+
+
 
                                     <!-- Modal content-->
                                     <div class="modal-content">
                                         <div class="modal-header">
                                             <button type="button" class="close" data-dismiss="modal">&times;</button>
-                                            <h4 class="modal-title">Euro size chart.</h4>
+                                            <h4 class="modal-title">sEuro size chart.</h4>
                                         </div>
+
                                         <div class="modal-body">
                                             <ul class="nav nav-tabs" style="text-align:center;">
                                                 <li class="active"><a data-toggle="tab" href="#manTable"><b>MAN</b></a></li>
                                                 <li><a data-toggle="tab" href="#womanTable"><b>WOMAN</b></a></li>
                                             </ul>
+
                                             <div class="tab-content">
 
                                                 <div id="manTable" class="tab-pane fade in active">
@@ -359,6 +338,7 @@ require_once('header.php');
                                                 </div>
                                             </div>
                                         </div>
+
                                         <div class="modal-footer">
                                             <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
                                         </div>
@@ -368,38 +348,21 @@ require_once('header.php');
                             </div>
                             <!--MODAL END -->
 
+                        </div> 
 
 
-                            <!--<div >
+                <!--end of the 4rth column--> 
 
-                                <input name="dress_jacket_size_num" id="" class="form-control">
-                                <!--<option value="">Size num</option>
-                                <option value="31">31</option>
-                                <option value="32">32</option>
-                                <option value="33">33</option>
-                                <option value="35">35</option>
-                                <option value="37">37</option>
-                                <option value="39">39</option>
-                                <option value="41">41</option>
-                                <option value="44">44</option>
-                            </select>
-                            </div>-->
-                        </div>
-                        <div class="col-md-3 new-cosigner-pads" style="display:none;text-align:left;padding-right:0 !important;">
-                            <p class="col-sm-12" style = "padding:0px;" >SHOE</p>
-                            <div >
-
-                                <input required name="shoes_size_num"  placeholder ="Size" class="form-control" id="shoeSelect">
-                                <!--<option value="">Size</option>
-                            </select>-->
-                            </div>
-                        </div>
                         <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 "></div>
+
                         <div class="border_b">
                             <p class="textInsideSsectionsPopup col-md-4 font-column-Subhead" >LIST YOUR FAVORITE BRANDS:</p>
-                            <input type="text" name="brands" class="col-md-8 form-control acsbrands" id="brand" style="width: 99%;margin-left: 7px;    font-size: 16px;" placeholder="A comma separates the brands.">
+                            <input type="text" name="brands" class="col-md-8 form-control acsbrands" id="listing_brand" style="width: 99%;margin-left: 7px;    font-size: 16px;" placeholder="A comma separates the brands.">
                         </div>
-                            <div class="sectionsPopup column-textCenter" id="newShopper" style = "padding-bottom: 0px">
+                            
+
+                            <div class="sectionsPopup column-textCenter" id="newShopper" style = "padding-bottom: 0px"></div>
+
                                 <h2 class="textInsideSectionsPopup select_style_wear  font-column-select-style"> SELECT THE STYLES YOU WEAR</h2>
                                 <h3 class="textInsideSectionsPopup font-column-Subhead " style="display: initial;font-family: 'AvenirNextLTW01-UltraLight', 'Avenir', 'Didot' !important;font-weight: bold;letter-spacing: 1px;font-size: 19px; margin-left: -9px; width: auto;text-align: left">
                                     CLICK ON THE CATEGORY LINK TO SEE EXAMPLES OF EACH
@@ -424,16 +387,16 @@ require_once('header.php');
                                                 <input type="checkbox" id="casualCheck" class="hidden" name="itemtypeconsign[]" value="CASUAL">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-responsive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/images_modal.png">
+                                                <img class="img-responsive" src="<?php echo get_bloginfo('template_url')?>/img/images_modal.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-responsive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/images_modal.png">
+                                                <img class="img-responsive" src="<?php echo get_bloginfo('template_url')?>/img/images_modal.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-responsive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/images_modal.png">
+                                                <img class="img-responsive" src="<?php echo get_bloginfo('template_url')?>/img/images_modal.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-responsive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/images_modal.png">
+                                                <img class="img-responsive" src="<?php echo get_bloginfo('template_url')?>/img/images_modal.png">
                                             </div>
                                         </div>
                                     </div>
@@ -446,16 +409,16 @@ require_once('header.php');
                                                 <input type="checkbox" id="preppyCheck" class="hidden" name="itemtypeconsign[]" value="PREPPY">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/preppr.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/preppr.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/preppr.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/preppr.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/preppr.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/preppr.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/preppr.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/preppr.png">
                                             </div>
                                         </div>
                                     </div>
@@ -467,16 +430,16 @@ require_once('header.php');
                                                 <input type="checkbox" id="streetwearCheck" class="hidden" name="itemtypeconsign[]" value="STREETWEAR">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/streetwear.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/streetwear.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/streetwear.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/streetwear.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/streetwear.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/streetwear.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/streetwear.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/streetwear.png">
                                             </div>
                                         </div>
                                     </div>
@@ -509,82 +472,137 @@ require_once('header.php');
                                                 <input type="checkbox" id="mensWearCheck" class="hidden" name="itemtypeconsign[]" value="MENS WEAR">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/chic.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/chic.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/chic.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/chic.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/chic.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/chic.png">
                                             </div>
                                             <div class="col-md-3">
-                                                <img class="img-resposive" src="http://lifeafterpurchase.com/wp-content/themes/custom/img/chic.png">
+                                                <img class="img-resposive" src="<?php echo get_bloginfo('template_url')?>/img/chic.png">
                                             </div>
                                         </div>
                                     </div>
-
                                 </div>
-
 
                                 <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 btn-select-update" style="text-align: center;">
-
-                                    <button type="button" class="btn btn-default btn-lg" style = " background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;margin-bottom: 40px;margin-top: 40px;">SELECT</button>
-                                </div>
-
-                                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 " style = "border-top:1px solid black;margin-bottom: 40px;">
-                                 </div>
-
-
-
+                                    <button type="button" class="btn btn-default btn-lg" onclick="updateAccountaaa();" style = " background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;margin-bottom: 40px;margin-top: 40px;">SELECT</button>
+                                </div> 
+                                <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 " style = "border-top:1px solid black;margin-bottom: 40px;"></div>
+                        </form>
+                            <input type='hidden' id="uc_uploads" value="<?php echo get_bloginfo ( 'template_url' ); ?>/images/uc_uploads/">
+                            <input type='hidden' id="cp_uploads" value="<?php echo get_bloginfo ( 'template_url' ); ?>/images/cp_uploads/">
 
 
                                 <!--Start column Profile-->
                                 <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 colmn-padds1 column-textCenter "  >
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 "  >
-                                                <img style = "border: 1px solid black;height:30%" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/Balenciaga.jpg" alt="...">
-                                            </div>
 
+
+                                    <?php
+                                    global $wpdb;
+                                    $name_uc_profile = "";
+                                    $oldImageProfileIcon =  $wpdb->get_results("SELECT * FROM wp_profile WHERE user_id = '" . $user_id . "' ORDER BY ID ASC ", ARRAY_A);
+
+                                    foreach($oldImageProfileIcon as $value){
+                                        $name_uc_profile =  $value['profile_name'];
+                                    }
+
+                                    ?>
+
+
+                                    <form  id="uploadProfile1Form" method="post" >
+                                        <div class="form-group">
+                                            <div id="singleImage"></div> 
+                                            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 "  >
+
+                                                <?php
+                                                if($name_uc_profile == ""){
+                                                ?>
+                                                    <img class="oldImageProfileIcon" id="oldImageProfileIcon1" style = "width:19%;height:182px;border: 1px solid black;height:30%" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/Balenciaga.jpg" alt="...">
+<!--                                                    <img class="oldImageProfileIcon" id="oldImageProfileIcon1" style = "width:19%;height:182px;border: 1px solid black;height:30%" src = "--><?php //echo get_bloginfo ( 'template_url' ); ?><!--/img/Balenciaga.jpg" alt="...">-->
+                                                    <?php
+                                                }else{
+                                                    ?>
+                                                    <img class="oldImageProfileIcon" style = "width: 19%;height:182px;border: 1px solid black;height:30%" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/images/uc_uploads/<?php echo $name_uc_profile?>" id="oldImageProfileIcon1" alt="...">
+                                                    <?php
+                                                }
+                                                ?>
+<!--                                                    <img class="oldImageProfileIcon2" style = "border: 1px solid black;height:30%" src = "--><?php //echo get_bloginfo ( 'template_url' ); ?><!--/images/uc_uploads/--><?php //echo $name_uc_profile?><!--" alt="...">-->
+
+
+                                                <div class="imageProfileIcon" style="display:none;width: 19%;text-align: center;margin: auto;position: relative;padding: 2px 0px;" onclick="document.getElementById('ppID').click(); return false;" >
+                                                    <img style = "margin: auto;display: block;height:30px" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/cp_icon.png" alt="...">
+                                                </div>
+                                            </div>
+                                            <input type="file" id="ppID" name="updateProfile" id="elem" style="visibility: hidden;"/>
                                             <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 btn-select-update"  >
-
-                                                <button type="button" class="btn btn-default btn-lg" style = " background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;margin-bottom: 40px;margin-top: 40px;">UPDATE</button>
+                                                <input type="submit" id="uploadProfile1submit" class="btn btn-default btn-lg"  style = "background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;" value="UPDATE">
                                             </div>
                                         </div>
                                     </form>
+                                    <div id="gallery_update_account"></div>
+                                </div>
 
-                                    <form role="form">
-                                        <div class="form-group">
-                                            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 "  >
-                                                <img class = "cover-photoH" style="border: 1px solid black;height:300px" src = "<?php echo get_bloginfo ( 'template_url'); ?>/img/gaukukh-nandanban-logo.jpg"  alt="...">
 
+                                <div style="clear: both"></div>
+                                <form id="uploadCoverPhoto" action="dutere" method="post">
+                                    <div class="form-group">
+                                        <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 "  >
+
+
+
+                                            <?php
+                                            global $wpdb;
+                                            $name_cp_profile = "";
+                                            $oldImageCoverIcon =  $wpdb->get_results("SELECT * FROM wp_coverphoto WHERE user_id = '" . $user_id . "' ORDER BY ID ASC ", ARRAY_A);
+
+                                            foreach($oldImageCoverIcon as $value){
+                                                $name_cp_profile =  $value['cp_name'];
+                                            }
+
+
+
+                                            if($name_cp_profile == "") {
+                                                ?>
+
+                                                <img class="oldImageCoverIcon" id="oldImageCoverIcon" style = "height:350px; width: 1110px; border: 1px solid black;" src = "<?php echo get_bloginfo ( 'template_url'); ?>/img/gaukukh-nandanban-logo.jpg"  alt="...">
+
+
+                                                <?php
+
+                                            }else{
+                                                ?>
+
+                                                <img class="oldImageCoverIcon" id="oldImageCoverIcon" style = "height:350px; width: 1110px; border: 1px solid black;"  src = "<?php echo get_bloginfo ( 'template_url'); ?>/images/cp_uploads/<?php echo $name_cp_profile ?>"  alt="...">
+
+
+                                                <?php
+                                            }
+                                            ?>
+<!--                                            <img class="oldImageCoverIcon" style = "border: 1px solid black;height:30%" src = "--><?php //echo get_bloginfo ( 'template_url' ); ?><!--/images/uc_uploads/--><?php //echo $name_uc_profile?><!--" alt="...">-->
+<!---->
+<!--                                            <img class = "oldImageCoverIcon" style="border: 1px solid black;height:300px" src = "--><?php //echo get_bloginfo ( 'template_url'); ?><!--/img/gaukukh-nandanban-logo.jpg"  alt="...">-->
+
+                                            <div class="imageCoverIcon" style="display:none;width: 19%;text-align: center;margin: auto;position: relative;padding: 2px 0px;" onclick="document.getElementById('cpID').click(); return false;" >
+                                                <img style = "margin: auto;display: block;height:30px" src = "<?php echo get_bloginfo ( 'template_url' ); ?>/img/cp_icon.png" alt="...">
                                             </div>
-                                            <!--
-                                            <div class="col-lg-12  col-md-12 col-sm-12 col-xs-12 " >
-
-                                                <button type="button" class="btn btn-default btn-lg" style = " background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;">UPDATE</button>
-                                            </div>-->
                                         </div>
-                                    </form>
-
-                                </div>
-                                <div class="btn-select-update" >
-                                    <input type="text" class="hidden" name="formtype" value="Shopper">
-
-                                    <!--<input class="submit"type="button" name="submit" style = "padding: 10px 40px !important; " value="UPDATE">
-                                    -->
-
-                                    <button type="button" class="btn btn-default btn-lg" onclick="updateAccount();" style = " background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;    margin-bottom: 40px;margin-top: 40px;">UPDATE</button>
-                                </div>
+                                    </div>
+                                    <input type="file" id="cpID" name="updateCoverPhoto" style="visibility: hidden;"/>
+                                    <div  class="btn-select-update" >
+                                        <input type="submit"  id="updateCoverPhotosubmit" class="btn btn-default btn-lg"  style = "background-color:black; color:white;border-radius: 0px;padding: 10px 60px !important;" value="UPDATE">
+                                    </div>
+                                </form>
+                                <div id="gallery_cp"></div>
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-
-
-
+ 
 </div>
 
 <?php
@@ -594,4 +612,5 @@ require_once('header.php');
 ?>
 
 
+ 
 

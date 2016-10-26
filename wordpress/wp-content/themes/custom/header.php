@@ -1,3 +1,11 @@
+<?php
+//    if(!session_id()) {
+//        session_start();
+//    }
+session_start();
+
+?>
+<!DOCTYPE html>
 <html>
 <title><?php wp_title(''); ?></title>
 <head>
@@ -7,20 +15,24 @@
     <link rel="stylesheet" type="text/css" href="<?php echo get_bloginfo ( 'template_url' ); ?>/css/custom-list.css" />
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-    <script src="<?php echo JS; ?>/jquery.min.js"></script>
-    <script src="<?php echo JS; ?>/custom-michael.js"></script>
-
-<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 <link href="//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.min.css" rel="stylesheet">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+     <script src="<?php echo JS; ?>/jquery.min.js"></script>
+    <script src="<?php echo JS; ?>/respond.min.js"></script>
+    <script src="<?php echo JS; ?>/custom-michael.js"></script>
+    <script src="<?php echo JS; ?>/tops.js"></script>
+    <script src="<?php echo JS; ?>/bootstrap.min.js"></script>
     <?php wp_head(); ?>
 </head>
 <body>
 <div id="mainWrapper">
 
-    <input type="hidden" id = "homeUsers" value="<?php  echo get_site_url();?>/home">
+        <input type="hidden" id = "updateAccount" value="<?php  echo get_site_url();?>/update-account">
+        <input type="hidden" id = "homePage" value="<?php  echo get_site_url();?>/home">
     <input type="hidden" id = "testDebugging" value="<?php  echo get_site_url();?>/test-debugging">
     <input type="hidden" id = "dataBaser" value="<?php  echo get_site_url(); ?>/database">
+    <input type="hidden" id = "fileDragUpload" value="<?php echo get_site_url(); ?>/filedragupload">
+    <input type="hidden" id = "listanitem" value="<?php echo get_site_url(); ?>/listanitem">
 
 	<div class="top-info" style = "display:block;background-color: white">
         <div class='container'>
@@ -75,6 +87,7 @@
                                     <label for="pwd" style = " color: #ccc !important;  ">I forgot my password!</label>
                                     <button type="button" id = "login_now" value = "login_now" onclick = "MyNewSgnIn();" class="btn btn-primary btn-lg form-sub" style="font-size:14px !important;padding: 10px 30px !important;position: relative; top: -26px;font-family: 'AvenirNextLTW01-UltraLight' !important;">LOG IN</button>
                                     <div id = "sigInDemo" style = "color: red"></div>
+                                    <input type = "hidden" id = "updated_acc" style = "color: red"></input>
                                 </div>
                             </div>
                         </form>
@@ -199,7 +212,7 @@
 
                             <li><a href="home">HOME</a></li>
 
-                            <li><a href = 'listanitem'>LIST AN ITEM</a></li>
+                            <li><a href = '<?php  echo get_site_url();?>/listanitem'>LIST AN ITEM</a></li>
 
                             <li style = "border-right:0px solid black !important;"><a href = 'update-account'>UPDATE ACCOUNT</a></li>
                     <?php

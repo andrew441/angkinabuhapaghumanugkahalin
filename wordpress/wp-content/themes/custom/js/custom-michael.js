@@ -6,7 +6,8 @@ function MyNewSgnIn(){
     var user_pass1 = document.getElementById("pass-signIn").value;
     var login_now = $("#login_now").val();
     var dataBaser1 = $("#dataBaser").val();
-    var homeUsers1 = $("#homeUsers").val();
+    var updateAccount = $("#updateAccount").val();
+    var homePage = $("#homePage").val();
 
     var post_data = {
         user_name: user_name1,
@@ -15,14 +16,21 @@ function MyNewSgnIn(){
     }
     $.post(dataBaser1,post_data)
         .done(function( data ) {
-            var data1 = document.getElementById("sigInDemo").innerHTML = data;
-            if(data1 == "success"){
-                window.location.href = homeUsers1;
+
+            var data1 = data;
+            var data2 = data1.split(' ');
+
+
+            document.getElementById("sigInDemo").innerHTML =data2[0];
+
+            if(data2[1] == 0){
+                window.location.href = updateAccount;
+            }else if(data2[1] == 1){
+                window.location.href = homePage;
             }
+
         });
-
 }
-
 function MyNewSgnUp(){
 
     var user_name = $("#user_name").val();
@@ -51,9 +59,9 @@ function MyNewSgnUp(){
 
 $(function () {
     var $j = jQuery.noConflict();
-//this is for checkbox
+//signup gender checkbox
 
-    $j("input:checkbox").on('change', function(){
+    $j("input:checkbox").on('change touchstart', function(){
         var CheckBoxItem = $j(this).attr('rel');
         genderSignUp = $j("#"+CheckBoxItem).val();
         if(genderSignUp === "Male"){
@@ -65,4 +73,22 @@ $(function () {
             $j("#check1").prop('checked', false);
         }
     });
+
+// checking admin or member active tab
+    var user_status_id = $j('#user_status_id').val();
+    if(user_status_id == 0){
+        $j('.under-review').removeClass('active-tab');
+    }else {
+        $j('.member-tabs').removeClass('active-tab');
+    }
+
 });
+
+
+
+
+
+
+
+
+

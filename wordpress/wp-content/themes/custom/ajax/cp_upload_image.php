@@ -1,14 +1,11 @@
-<?php
+<?php session_start();
 /**
  * Template Name: cp_upload_image
 */
 
-session_start();
 $user_id = $_SESSION['user_id'];
 
-//echo "<pre>";
-//    print_r( $_FILES);
-//echo "<pre>";
+
 
 if(!empty($_FILES['updateCoverPhoto']['name']) == ""){
     echo "<p style = 'color:red'>Please select images</p>";
@@ -63,7 +60,9 @@ if(!empty($_FILES['updateCoverPhoto']['name']) == ""){
 //                }else{
 //                    echo "error ni !";
 //                }
-                echo "File is an image - " . $check["mime"] . ".(operationsplitedtextcoverphoto)";
+
+                echo "Image has been uploaded. (operationsplitedtextcoverphoto)";
+//                echo "File is an image - " . $check["mime"] . ".(operationsplitedtextcoverphoto)";
                 $uploadOk = 1;
 
             } else {
@@ -94,24 +93,32 @@ if(!empty($_FILES['updateCoverPhoto']['name']) == ""){
             // if everything is ok, try to upload file
         } else {
             global $wpdb;
-            $get_val = '';
-            $query = $wpdb->get_results("SELECT * FROM wp_coverPhoto WHERE cp_name = '" . $file_name . "'", ARRAY_A);
+            $get_val1 = '';
+            $query = $wpdb->get_results("SELECT * FROM wp_coverphoto WHERE cp_name = '" . $file_name . "'", ARRAY_A);
 //				 echo "<pre>";
 //				 	print_r( $query);
 //				 echo "<pre>";
+//
+//            if($query > 0){
+//                echo 'success';
+//            }else{
+//                echo "field";
+//            }
+
+
             foreach ($query as $result) {
-                $get_val = $result['ID'];
+                $get_val1 = $result['ID'];
             }
 
             if (move_uploaded_file($_FILES["updateCoverPhoto"]["tmp_name"], $target_file)) {
 
                 $imageFileType1 = pathinfo($target_file, PATHINFO_FILENAME);
-                rename($target_file, $target_dirs . '' . $imageFileType1 . '-' . $get_val . '.' . $imageFileType);
+                rename($target_file, $target_dirs . '' . $imageFileType1 . '-' . $get_val1 . '.' . $imageFileType);
 
-                $renameFileName = $imageFileType1 . '-' . $get_val . '.' . $imageFileType;
-
+                $renameFileName = $imageFileType1 . '-' . $get_val1 . '.' . $imageFileType;
+//                echo 'this is my id '.$get_val1. '<br>';
                 $r = array(
-                    'ID' => $get_val
+                    'ID' => $get_val1
                 );
                 $r_data = array(
                     'cp_name' => $renameFileName
@@ -123,7 +130,7 @@ if(!empty($_FILES['updateCoverPhoto']['name']) == ""){
                     '%d'
                 );
                 $trows = $wpdb->update(
-                    'wp_coverPhoto',
+                    'wp_coverphoto',
                     $r_data,
                     $r,
                     $r_data_val,

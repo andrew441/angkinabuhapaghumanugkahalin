@@ -45,6 +45,7 @@ $(function () {
             success: function(data)
             {
 
+
                 var uc_cpdata_id = data.split("(operationsplitedtextcoverphoto)");
                 document.getElementById('gallery_cp').innerHTML = uc_cpdata_id[0];
                 var cp_uploads = document.getElementById('cp_uploads').value;

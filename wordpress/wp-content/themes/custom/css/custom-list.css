@@ -328,7 +328,9 @@
     top: -130px;
     color:white;
 }
-
+.uploadPhoto{
+    display: none !important;
+}
 
 
 /*this is for the modal css*/
@@ -478,14 +480,23 @@
 .color-red{
     color:red;
 }
-.line-dushed{
+
+
+.dropzone{
     margin-bottom:5px;
     border:2px dashed #ccc;
     height: 50px;
     margin-top: 10px;
-}.line-dushed p{
+    color: #ccc;
+}.dropzone.dragover{
+    border-color:#000;
+    color:#000;
+}
+
+
+/*.line-dushed p{
     padding-top:20px;
- }
+ }*/
 .line-box > button{
     border-radius:0px !important;
     float: left;
@@ -1280,11 +1291,10 @@
 
 }
 
-/*css for account admin and member*/
 .btn-default:hover {
-    color: white !important;
-    background-color: #000000 !important;
-}
+     color: white !important;
+     background-color: #000000 !important;
+ }
 .btn-default {
     color: white !important;
     background-color: #000000 !important;
@@ -1320,8 +1330,12 @@
     display: -oz-inline-box;
     float: none;
 }
+
 .active-tab{
     display:block !important;
+}
+.opacity{
+    opacity: 1 !important;
 }
 .active-underline{
     -moz-text-decoration-color: red !important; /* Code for Firefox */
@@ -1405,3 +1419,10 @@ label.div-right-hand{
     letter-spacing: 1px;
     margin-bottom: 15px !important;
 }
+
+/*.oldImageProfileIcon:hover{*/
+
+/*}*/
+/*.imageProfileIcon{*/
+    /*border: 1px solid red;*/
+/*}*/
